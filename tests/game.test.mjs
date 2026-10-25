@@ -37,3 +37,10 @@ test('verdict parsing', () => {
   assert.equal(parseVerdict('nope'), null);
   assert.equal(parseVerdict({ valid: false, obscurity: 3, comment: 'x' }).valid, false);
 });
+
+test('generic words in an answer are fair game', () => {
+  assert.ok(!givesAway('What famous Italian bell tower tilts?', 'Leaning Tower of Pisa'));
+  assert.ok(givesAway('Why does the tower in Pisa lean?', 'Leaning Tower of Pisa'));
+  assert.ok(givesAway('What is a black hole?', 'Black hole'));
+  assert.ok(!givesAway('Which wall can you supposedly see from space?', 'Great Wall of China'));
+});

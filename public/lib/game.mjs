@@ -68,7 +68,10 @@ export const SIMILAR = 0.86; // cosine at which two questions count as "the same
 // ---- text -------------------------------------------------------------------
 
 const STOP = new Set(('a an and are as at be by for from has have in is it its of on or that the this to was were what which who whom whose why with ' +
-  'lake river island mount mountain city town the of de la le el bay sea cape').split(' '));
+  'lake river island islands mount mountain city town the of de la le el bay sea cape ' +
+  // generic words inside answers ("Leaning Tower of Pisa", "Great Wall of China", "Big Ben") that a fair question may use
+  'tower wall great bridge falls canal station space international house day days time big hot old new black hole light lights ' +
+  'comet cube note code oven games canyon').split(' '));
 
 export function tokens(s) {
   return (s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').match(/[a-z0-9]+/g) || []);
