@@ -21,9 +21,9 @@ These blend into a rarity from 0 to 1 (`rarity()` / `pointsFor()` in `public/lib
 
 | Path | What |
 | --- | --- |
-| `public/` | The static site: `index.html`, `style.css`, `app.js`, and `lib/game.mjs` (shared with the Worker). |
+| `public/` | The static site: `index.html`, `style.css`, `app.js`, `launch.js`/`launch.css` (the hot-air-balloon launch and tier reveal after each question), and `lib/game.mjs` (shared with the Worker). |
 | `worker/index.mjs` | The Worker: serves `public/` and `/api/today`, `/api/open`, `/api/ask`. One Durable Object (`Day`, SQLite) per puzzle day stores questions, embeddings and totals. |
-| `src/puzzles.json` | The puzzle bank: 28 days × 7 answers. Day *n* uses entry `(n − 1) mod 28`, so it loops after four weeks. Add more days to the end. |
+| `src/puzzles.json` | The puzzle bank: 28 days × 7 answers. Each answer has three `obvious` questions (used for scoring) and a `ladder` of example questions for the 15/30/60/85/100 tiers, shown after a player finishes the day. Day *n* uses entry `(n − 1) mod 28`, so it loops after four weeks. Add more days to the end. |
 | `tests/` | `npm test` |
 
 Players are anonymous (a `kr_id` cookie). The timer starts on the server when a card is first shown, so reloading doesn't reset it. A new puzzle starts at midnight Eastern. KrONE #1 was 2026-10-25.

@@ -61,8 +61,12 @@ async function route(req, env, url, pid) {
   return json({ error: 'Not found' }, 404);
 }
 
+// Keyed by the day's answers too, so editing a day's puzzle starts it fresh instead of mixing old results in.
 function stub(env, n) {
-  return env.DAY.get(env.DAY.idFromName('day-' + n));
+  const answers = puzzleFor(n).map(it => it.answer).join('|');
+  let h = 0;
+  for (let k = 0; k < answers.length; k++) h = (h * 31 + answers.charCodeAt(k)) >>> 0;
+  return env.DAY.get(env.DAY.idFromName(`day-${n}-${h.toString(36)}`));
 }
 
 // ---- the day ----------------------------------------------------------------
@@ -87,11 +91,13 @@ export class Day extends DurableObject {
     this.asks = new Map();    // pid → [result per item]
     this.crowd = Array.from({ length: ITEMS_PER_DAY }, () => []); // item → [{pid, q, emb}]
     this.totals = new Map();  // pid → total points
+    this.best = [];           // item → today's rarest judged question { q, points, rarity }
     for (const r of this.sql.exec(`SELECT pid, item, ts FROM opens`)) row(this.opens, r.pid)[r.item] = r.ts;
     for (const r of this.sql.exec(`SELECT pid, item, q, emb, points, result FROM asks ORDER BY ts`)) {
       row(this.asks, r.pid)[r.item] = JSON.parse(r.result);
       if (r.q) this.crowd[r.item].push({ pid: r.pid, q: r.q, emb: r.emb ? JSON.parse(r.emb) : null });
       this.totals.set(r.pid, (this.totals.get(r.pid) || 0) + r.points);
+      this.consider(r.item, JSON.parse(r.result));
     }
     const obv = this.sql.exec(`SELECT v FROM meta WHERE k='obvious'`).toArray()[0]?.v;
     this.obviousEmb = obv ? JSON.parse(obv) : null;
@@ -106,7 +112,26 @@ export class Day extends DurableObject {
 
   async state(pid, n) {
     this.load(); this.setDay(n);
-    return { opened: this.opens.get(pid) || [], results: this.asks.get(pid) || [], stats: this.stats(pid) };
+    return { opened: this.opens.get(pid) || [], results: this.asks.get(pid) || [], stats: this.stats(pid), reveal: this.reveal(pid) };
+  }
+
+  // Only questions the AI judge actually checked can be shown to other players.
+  consider(i, res) {
+    if (!res?.valid || !res.judged || !res.q) return;
+    const b = this.best[i];
+    if (!b || res.points > b.points || (res.points === b.points && (res.rarity || 0) > b.rarity)) {
+      this.best[i] = { q: res.q, points: res.points, rarity: res.rarity || 0 };
+    }
+  }
+
+  // After all seven: what each tier looks like for every answer, and today's rarest player question.
+  reveal(pid) {
+    const mine = this.asks.get(pid) || [];
+    if (mine.filter(Boolean).length < ITEMS_PER_DAY) return null;
+    return puzzleFor(this.n).map((item, i) => ({
+      ladder: { 10: item.obvious[0], ...(item.ladder || {}) },
+      top: this.best[i] && this.best[i].points >= 30 ? { q: this.best[i].q, points: this.best[i].points } : null,
+    }));
   }
 
   async open(pid, i, n) {
@@ -122,7 +147,7 @@ export class Day extends DurableObject {
   async ask(pid, i, q, n) {
     this.load(); this.setDay(n);
     const mine = row(this.asks, pid);
-    if (mine[i]) return { result: mine[i], stats: this.stats(pid) };
+    if (mine[i]) return { result: mine[i], stats: this.stats(pid), reveal: this.reveal(pid) };
     const key = pid + ':' + i;
     if (this.pending.has(key)) return { error: 'Already judging that one…' };
     this.pending.add(key);
@@ -135,10 +160,11 @@ export class Day extends DurableObject {
       mine[i] = result;
       this.totals.set(pid, (this.totals.get(pid) || 0) + result.points);
       if (result.valid) this.crowd[i].push({ pid, q, emb: result.emb });
+      this.consider(i, result);
       const emb = result.emb; delete result.emb;
       this.sql.exec(`INSERT OR REPLACE INTO asks VALUES (?, ?, ?, ?, ?, ?, ?)`,
         pid, i, result.valid ? q : '', emb ? JSON.stringify(emb) : null, result.points, JSON.stringify(result), Date.now());
-      return { result, stats: this.stats(pid) };
+      return { result, stats: this.stats(pid), reveal: this.reveal(pid) };
     } finally {
       this.pending.delete(key);
     }
@@ -176,7 +202,7 @@ export class Day extends DurableObject {
 
     return {
       ...base, valid: true, points, comment: verdict.comment,
-      rarity: Math.round(r * 100), similar: close, askedBy: others.length,
+      rarity: Math.round(r * 100), similar: close, askedBy: others.length, judged: !!verdict.judged,
       emb: emb || null,
     };
   }
@@ -217,7 +243,7 @@ Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}
         response_format: { type: 'json_schema', json_schema: { type: 'object', properties: { valid: { type: 'boolean' }, obscurity: { type: 'number' }, comment: { type: 'string' } }, required: ['valid', 'obscurity', 'comment'] } },
       });
       const v = parseVerdict(out?.response);
-      if (v) return v;
+      if (v) return { ...v, judged: true };
     } catch (e) {
       console.error('judge', e);
     }

@@ -1,4 +1,5 @@
 import { TIERS, ITEMS_PER_DAY, SECONDS, METERS_PER_POINT, tierFor, shareText, givesAway } from './lib/game.mjs';
+import { launch } from './launch.js';
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const app = $('#app');
@@ -111,10 +112,11 @@ async function play(i) {
 }
 
 async function submit(i, text) {
-  app.innerHTML = `<section class="screen card judging"><div class="spinner"></div><p>The judge is reading your question…</p></section>`;
+  app.innerHTML = '';
+  const asked = api('/api/ask', { n: day.n, i, q: text });
   let r;
   try {
-    r = await api('/api/ask', { n: day.n, i, q: text });
+    r = await launch(asked, day.items[i].answer);
   } catch (e) {
     if (e.stale) return load();
     app.innerHTML = `<section class="screen card"><p class="error">${esc(e.message)}</p><button class="btn" id="retry">Try again</button></section>`;
@@ -123,6 +125,7 @@ async function submit(i, text) {
   }
   day.results[i] = r.result;
   day.stats = r.stats;
+  if (r.reveal) day.reveal = r.reveal;
   setAltitude(total());
   verdict(i, r.result);
 }
@@ -160,7 +163,19 @@ function summary() {
   const recap = day.items.map((it, i) => {
     const r = day.results[i] || { points: 0 };
     const t = tierFor(r.points);
-    return `<li style="--c:${t.color}"><span class="p">${t.emoji}<br>${r.points}</span><span><span class="a">${esc(it.answer)}</span><br><span class="q">${r.q ? esc(r.q) : '<i>no question</i>'}</span></span></li>`;
+    const rv = day.reveal?.[i];
+    const ladder = rv ? TIERS.filter(x => x.points && rv.ladder[x.points]).map(x => `
+        <li class="${x.points === r.points ? 'yours' : ''}" style="--c:${x.color}">
+          <span class="tier">${x.emoji} ${x.points === 100 ? 'One of ONE' : esc(x.name)}${x.points === r.points ? ' <em>← you</em>' : ''}</span>
+          <span class="ex">${esc(rv.ladder[x.points])}</span>
+        </li>`).join('') : '';
+    const top = rv?.top ? `<div class="top" style="--c:${tierFor(rv.top.points).color}"><span class="tier">👑 Today's rarest question from a player · ${tierFor(rv.top.points).emoji} +${rv.top.points * METERS_PER_POINT} m</span><span class="ex">${esc(rv.top.q)}</span></div>` : '';
+    return `<li style="--c:${t.color}">
+      <details${i === 0 ? ' open' : ''}>
+        <summary><span class="p">${t.emoji}<br>${r.points}</span><span><span class="a">${esc(it.answer)}</span><br><span class="q">${r.q ? esc(r.q) : '<i>no question</i>'}</span></span></summary>
+        ${rv ? `<div class="ladder"><div class="label">What each tier looked like</div><ol>${ladder}</ol>${top}</div>` : ''}
+      </details>
+    </li>`;
   }).join('');
   app.innerHTML = `
     <section class="screen card summary">

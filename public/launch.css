@@ -1,0 +1,69 @@
+/* The launch overlay (public/launch.js). */
+
+.launch { position: fixed; inset: 0; z-index: 30; overflow: hidden; display: grid; place-items: center; cursor: pointer;
+  opacity: 0; transition: opacity .35s ease; -webkit-tap-highlight-color: transparent; }
+.launch.on { opacity: 1; }
+.launch .l-sky { position: absolute; inset: 0; opacity: 0; background: linear-gradient(to top, #1d2b66, #07081a); }
+.launch::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(246,164,107,.55), rgba(27,42,74,.35) 60%, rgba(11,15,31,.25)); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+
+/* streaks rush downward while climbing; faster for rarer questions */
+.launch .l-streaks { position: absolute; inset: -20% 0 0; opacity: 0; transition: opacity .4s;
+  background-image:
+    linear-gradient(to bottom, transparent 0 70%, rgba(255,255,255,.55) 70% 100%),
+    linear-gradient(to bottom, transparent 0 80%, rgba(255,255,255,.35) 80% 100%),
+    linear-gradient(to bottom, transparent 0 75%, rgba(255,255,255,.45) 75% 100%),
+    linear-gradient(to bottom, transparent 0 85%, rgba(255,255,255,.3) 85% 100%);
+  background-size: 2px 180px, 1px 140px, 2px 220px, 1px 120px;
+  background-position: 12% 0, 31% 40px, 68% 90px, 88% 10px;
+  background-repeat: repeat-y; }
+.launch.climbing .l-streaks { opacity: 1; animation: streak var(--streak, 800ms) linear infinite; }
+@keyframes streak { to { transform: translateY(220px); } }
+
+.launch .l-ground { position: absolute; left: -10%; right: -10%; bottom: -2vh; height: 16vh; border-radius: 50% 50% 0 0 / 40% 40% 0 0; background: linear-gradient(#2c5a4a, #173328); }
+
+.launch .l-balloon { position: absolute; left: 50%; bottom: 10vh; width: min(62vw, 46vh, 420px); margin-left: calc(min(62vw, 46vh, 420px) / -2);
+  transform-origin: 50% 100%; filter: drop-shadow(0 20px 40px rgba(0,0,0,.35)); }
+.launch .l-balloon svg { display: block; width: 100%; animation: sway 3s ease-in-out infinite; }
+@keyframes sway { 0%, 100% { transform: rotate(-1.5deg) translateY(0); } 50% { transform: rotate(1.5deg) translateY(-8px); } }
+.launch .flame { transform-origin: 100px 258px; animation: flicker .18s ease-in-out infinite alternate; }
+@keyframes flicker { from { transform: scaleY(.85); opacity: .85; } to { transform: scaleY(1.15); opacity: 1; } }
+.launch.climbing .flame { animation: flicker-big .09s ease-in-out infinite alternate; }
+@keyframes flicker-big { from { transform: scale(1.4, 1.3); } to { transform: scale(1.7, 1.9); } }
+.launch.sputter .flame { animation: sputter 1.4s steps(6) forwards; }
+@keyframes sputter { 0% { opacity: 1; } 40% { opacity: .2; } 55% { opacity: .8; } 100% { opacity: 0; } }
+
+.launch .l-caption { position: absolute; top: 12vh; left: 16px; right: 16px; text-align: center; display: grid; gap: 6px; transition: opacity .3s; }
+.launch .l-answer { font: 800 clamp(28px, 7vw, 46px)/1 var(--display); letter-spacing: -.02em; text-shadow: 0 2px 20px rgba(0,0,0,.35); }
+.launch .l-status { color: var(--dim); font-weight: 600; }
+.launch.revealed .l-caption { opacity: 0; }
+
+.launch .l-meter { position: absolute; bottom: 6vh; left: 0; right: 0; text-align: center; font: 800 clamp(30px, 8vw, 54px)/1 var(--display); color: var(--accent);
+  font-variant-numeric: tabular-nums; text-shadow: 0 2px 18px rgba(0,0,0,.4); }
+
+.launch .l-reveal { position: relative; z-index: 2; display: grid; justify-items: center; gap: 6px; padding: 0 16px; text-align: center; }
+.launch .l-reveal[hidden] { display: none; }
+.launch .l-emoji { font-size: clamp(44px, 12vw, 72px); animation: slam .5s cubic-bezier(.2,1.6,.4,1) both; }
+.launch .l-name { font: 800 clamp(40px, 12vw, 92px)/.95 var(--display); letter-spacing: -.03em; color: var(--c); text-transform: uppercase;
+  text-shadow: 0 0 40px color-mix(in srgb, var(--c) 55%, transparent), 0 4px 24px rgba(0,0,0,.45); animation: slam .6s .08s cubic-bezier(.2,1.5,.4,1) both; }
+.launch .l-pts { font: 800 clamp(26px, 6vw, 40px)/1 var(--display); color: var(--text); animation: rise .5s .3s both; }
+.launch .l-sub { color: var(--text); opacity: .85; max-width: 32ch; animation: rise .5s .45s both; }
+@keyframes slam { from { transform: scale(2.6); opacity: 0; filter: blur(6px); } }
+.launch[data-tier="100"] .l-name { background: linear-gradient(90deg, #fff6c2, #ffd84d 30%, #ffb02e 60%, #fff6c2); -webkit-background-clip: text; background-clip: text; color: transparent;
+  background-size: 200% 100%; animation: slam .7s .08s cubic-bezier(.2,1.5,.4,1) both, shimmer 1.6s .8s linear infinite; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+.launch[data-tier="0"] .l-name { color: #c6cad6; animation: thud .5s ease-out both; }
+@keyframes thud { from { transform: translateY(-40px); opacity: 0; } 60% { transform: translateY(6px); } }
+
+.launch .l-flash { position: absolute; inset: 0; z-index: 3; pointer-events: none; background: radial-gradient(circle, #fff, color-mix(in srgb, var(--c) 70%, transparent) 40%, transparent 75%);
+  animation: flash .9s ease-out forwards; }
+@keyframes flash { from { opacity: .95; } to { opacity: 0; } }
+.launch .l-bit { position: absolute; left: 50%; top: 50%; width: 9px; height: 14px; border-radius: 2px; z-index: 3; pointer-events: none;
+  animation: burst 1.8s cubic-bezier(.1,.7,.3,1) forwards; }
+@keyframes burst { from { transform: translate(-50%, -50%) rotate(0); opacity: 1; }
+  to { transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y) + 30vh)) rotate(var(--r)); opacity: 0; } }
+
+.launch .l-skip { position: absolute; bottom: 14px; right: 16px; font-size: 12px; color: var(--dim); opacity: .7; }
+
+/* no lift: the balloon stays on the ground, so the verdict goes above it */
+.launch[data-tier="0"] .l-reveal { align-self: start; margin-top: 14vh; }
+.launch[data-tier="0"] .l-balloon { opacity: .55; transition: opacity .6s; }

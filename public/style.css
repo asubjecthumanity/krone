@@ -150,7 +150,20 @@ h2 { font-size: 24px; }
 .meters { font: 800 clamp(52px, 15vw, 84px)/1 var(--display); letter-spacing: -.03em; color: var(--accent); font-variant-numeric: tabular-nums; }
 .grid { font-size: 28px; letter-spacing: 4px; margin: 10px 0 6px; }
 .recap { list-style: none; margin: 18px 0; padding: 0; display: grid; gap: 8px; text-align: left; }
-.recap li { display: grid; grid-template-columns: 44px 1fr; gap: 10px; padding: 10px 12px; border-radius: 14px; background: rgba(0,0,0,.22); }
+.recap > li { border-radius: 14px; background: rgba(0,0,0,.22); }
+.recap summary { display: grid; grid-template-columns: 44px 1fr 16px; gap: 10px; padding: 10px 12px; cursor: pointer; list-style: none; }
+.recap summary::-webkit-details-marker { display: none; }
+.recap summary::after { content: "▾"; color: var(--dim); align-self: center; transition: transform .2s; }
+.recap details[open] summary::after { transform: rotate(180deg); }
+.ladder { padding: 0 12px 12px; }
+.ladder .label { margin: 4px 0 8px; }
+.ladder ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.ladder li, .ladder .top { display: grid; gap: 2px; padding: 8px 10px; border-radius: 10px; border-left: 3px solid var(--c); background: rgba(255,255,255,.04); }
+.ladder li.yours { background: color-mix(in srgb, var(--c) 16%, transparent); }
+.ladder .tier { font-size: 12px; font-weight: 700; color: var(--c); }
+.ladder .tier em { font-style: normal; color: var(--text); }
+.ladder .ex { font-size: 14px; }
+.ladder .top { margin-top: 8px; background: rgba(255,216,77,.08); }
 .recap .p { font: 800 18px/1.2 var(--display); color: var(--c); text-align: center; }
 .recap .a { font-weight: 700; }
 .recap .q { color: var(--dim); font-size: 14px; overflow-wrap: anywhere; }
