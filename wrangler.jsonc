@@ -8,8 +8,8 @@
   "compatibility_date": "2026-10-01",
   "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
   "ai": { "binding": "AI" },
-  "durable_objects": { "bindings": [{ "name": "DAY", "class_name": "Day" }] },
-  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Day"] }],
+  "durable_objects": { "bindings": [{ "name": "DAY", "class_name": "Day" }, { "name": "BUDGET", "class_name": "Budget" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Day"] }, { "tag": "v2", "new_sqlite_classes": ["Budget"] }],
   "vars": {
     "JUDGE_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
     "EMBED_MODEL": "@cf/baai/bge-base-en-v1.5"

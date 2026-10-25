@@ -42,4 +42,4 @@ Local: `npx wrangler dev` (Workers AI runs remotely, so you need to be logged in
 
 ### Costs
 
-Each question makes one judge call and one embedding call. The Workers AI free allocation is 10,000 neurons a day. If it runs out, the judge falls back gracefully (every question is treated as valid and scored on distance from the obvious questions and the crowd). For more headroom, switch `JUDGE_MODEL` in `wrangler.jsonc` to a smaller model such as `@cf/meta/llama-3.1-8b-instruct-fast`, or move to Workers Paid.
+Each question makes one judge call and one embedding call (about 15 neurons in all). The Workers AI free allocation is 10,000 neurons a day (reset 00:00 UTC), and Cloudflare has no spending cap, so the Worker keeps its own count in the `Budget` Durable Object and stops calling AI at 9,000 neurons a day (about 600 questions). Past that, until the reset, the judge falls back gracefully: every question is treated as valid and scored on distance from the obvious questions and the crowd. `GET /api/budget` shows today's count. To lower the cap, set the `AI_DAILY_NEURONS` var; it can't be raised above 9,000 without editing `AI_DAILY_LIMIT` in `worker/index.mjs`.

@@ -48,6 +48,8 @@ async function route(req, env, url, pid) {
     return json({ n, date: dateForDay(n), seconds: SECONDS, items, ...state, now: Date.now() });
   }
 
+  if (p === '/api/budget' && req.method === 'GET') return json(await env.BUDGET.get(env.BUDGET.idFromName('ai')).status());
+
   if (req.method !== 'POST') return json({ error: 'Not found' }, 404);
   const body = await req.json().catch(() => ({}));
   const n = Number(body.n), i = Number(body.i);
@@ -148,7 +150,13 @@ export class Day extends DurableObject {
     if (!q || q.replace(/[^a-z]/gi, '').length < 6) return { ...base, points: 0, valid: false, reason: 'empty', comment: 'No question, no lift.' };
     if (givesAway(q, item.answer)) return { ...base, points: 0, valid: false, reason: 'giveaway', comment: `Your question contains the answer. That's cheating, friend.` };
 
-    const [verdict, emb] = await Promise.all([this.askJudge(item, q), this.embed(item, i, q)]);
+    const ai = await this.meter();
+    let verdict, emb;
+    try {
+      [verdict, emb] = await Promise.all([this.askJudge(item, q, ai), this.embed(item, i, q, ai)]);
+    } finally {
+      ai?.done();
+    }
     if (!verdict.valid) return { ...base, points: 0, valid: false, reason: verdict.reason || 'wrong', comment: verdict.comment || `That doesn't lead to ${item.answer}.` };
 
     // How close is it to the predictable questions, and to what everyone else asked today?
@@ -173,9 +181,28 @@ export class Day extends DurableObject {
     };
   }
 
-  async askJudge(item, q) {
+  // AI calls for one question go through a meter, or none at all once today's free AI allowance is used up
+  async meter() {
     const env = this.env;
-    if (!env.AI) return { valid: true, obscurity: 35, comment: 'Judge offline: scored on rarity alone.' };
+    if (!env.AI || !env.BUDGET) return null;
+    const budget = env.BUDGET.get(env.BUDGET.idFromName('ai'));
+    const day = await budget.reserve(RESERVE);
+    if (!day) return null;
+    const m = {
+      used: 0,
+      run: async (model, input) => {
+        const out = await env.AI.run(model, input);
+        m.used += neurons(model, input, out);
+        return out;
+      },
+      done: () => budget.settle(day, m.used - RESERVE),
+    };
+    return m;
+  }
+
+  async askJudge(item, q, ai) {
+    const env = this.env;
+    if (!ai) return { valid: true, obscurity: 35, comment: 'The judge is resting today. Scored on rarity alone.' };
     const system = `You are the judge of KrONE, a game where the player is given a rare ANSWER and must write a QUESTION whose answer is it, and the more unusual the question, the better.
 Decide:
 - valid: true if someone who knows the facts would read QUESTION and arrive at ANSWER as a correct answer (other answers can also be possible, but ANSWER must clearly fit), the facts in QUESTION are accurate, and it is a sincere question. false if it is factually wrong, too vague to point at ANSWER (e.g. "What is a thing?"), unrelated, a joke that doesn't work, or offensive/hateful/sexual.
@@ -184,7 +211,7 @@ Decide:
 Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}`;
     const user = `ANSWER: ${item.answer}\nABOUT IT: ${item.blurb}\nQUESTION: ${q}`;
     try {
-      const out = await env.AI.run(env.JUDGE_MODEL, {
+      const out = await ai.run(env.JUDGE_MODEL, {
         messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
         max_tokens: 120, temperature: 0.2,
         response_format: { type: 'json_schema', json_schema: { type: 'object', properties: { valid: { type: 'boolean' }, obscurity: { type: 'number' }, comment: { type: 'string' } }, required: ['valid', 'obscurity', 'comment'] } },
@@ -197,18 +224,18 @@ Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}
     return { valid: true, obscurity: 35, comment: 'The judge blinked. Scored on rarity alone.' };
   }
 
-  async embed(item, i, q) {
+  async embed(item, i, q, ai) {
     const env = this.env;
-    if (!env.AI) return null;
+    if (!ai) return null;
     try {
       if (!this.obviousEmb) {
         const all = puzzleFor(this.n).flatMap(it => it.obvious);
-        const out = await env.AI.run(env.EMBED_MODEL, { text: all });
+        const out = await ai.run(env.EMBED_MODEL, { text: all });
         const vecs = out.data.map(norm);
         this.obviousEmb = Array.from({ length: ITEMS_PER_DAY }, (_, k) => vecs.slice(k * 3, k * 3 + 3));
         this.sql.exec(`INSERT OR REPLACE INTO meta VALUES ('obvious', ?)`, JSON.stringify(this.obviousEmb));
       }
-      const out = await env.AI.run(env.EMBED_MODEL, { text: [q] });
+      const out = await ai.run(env.EMBED_MODEL, { text: [q] });
       return norm(out.data[0]);
     } catch (e) {
       console.error('embed', e);
@@ -223,6 +250,74 @@ Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}
     const below = totals.filter(t => t < mine).length;
     const avg = players ? Math.round(totals.reduce((a, b) => a + b, 0) / players) : 0;
     return { players, avg, beat: players > 1 ? Math.round(100 * below / (players - 1)) : null };
+  }
+}
+
+// ---- the AI budget ------------------------------------------------------------
+// Workers AI includes 10,000 free neurons a day (reset at 00:00 UTC) and Cloudflare has no spending cap, so the game
+// keeps its own count in one Durable Object and stops calling AI before the free allowance runs out. Until the reset,
+// questions are scored without the judge or embeddings (the same fallback as when AI is unavailable).
+
+const AI_DAILY_LIMIT = 9000;   // neurons a day (AI_DAILY_NEURONS overrides); stays under the free 10,000 with room for error
+const RESERVE = 40;            // set aside before each question (one usually costs ~20), then settled to the real use
+
+// neurons per million tokens (https://developers.cloudflare.com/workers-ai/platform/pricing/); a model not listed
+// here is counted at a deliberately high guess, so switching JUDGE_MODEL can only make the cap stricter
+const RATES = {
+  '@cf/meta/llama-3.3-70b-instruct-fp8-fast': { in: 26668, out: 204805 },
+  '@cf/baai/bge-base-en-v1.5': { in: 6058, out: 0 },
+};
+const UNKNOWN_RATE = { in: 60000, out: 300000 };
+
+function neurons(model, input, out) {
+  const r = RATES[model] || UNKNOWN_RATE;
+  const text = input.messages ? input.messages.map(m => m.content).join(' ') : input.text.join(' ');
+  const tin = out?.usage?.prompt_tokens ?? Math.ceil(text.length / 3);   // ~4 characters a token; /3 errs high
+  const tout = input.messages ? out?.usage?.completion_tokens ?? input.max_tokens ?? 0 : 0;
+  return (tin * r.in + tout * r.out) / 1e6;
+}
+
+const utcDay = () => new Date().toISOString().slice(0, 10);
+
+export class Budget extends DurableObject {
+  constructor(ctx, env) {
+    super(ctx, env);
+    this.sql = ctx.storage.sql;
+    this.sql.exec(`CREATE TABLE IF NOT EXISTS spend (day TEXT PRIMARY KEY, neurons REAL)`);
+    this.day = null; this.used = 0;
+    this.limit = Math.min(Number(env.AI_DAILY_NEURONS) || AI_DAILY_LIMIT, AI_DAILY_LIMIT);
+  }
+
+  today() {
+    const day = utcDay();
+    if (day !== this.day) {
+      this.day = day;
+      this.used = this.sql.exec(`SELECT neurons FROM spend WHERE day = ?`, day).toArray()[0]?.neurons || 0;
+    }
+    return day;
+  }
+
+  // the day to settle against, or null when this question would go over today's limit
+  async reserve(n) {
+    const day = this.today();
+    if (this.used + n > this.limit) return null;
+    this.add(day, n);
+    return day;
+  }
+
+  async settle(day, delta) {
+    this.today();
+    this.add(day, delta);
+  }
+
+  add(day, n) {
+    if (day === this.day) this.used = Math.max(0, this.used + n);
+    this.sql.exec(`INSERT INTO spend VALUES (?, MAX(0, ?)) ON CONFLICT(day) DO UPDATE SET neurons = MAX(0, neurons + ?)`, day, n, n);
+  }
+
+  async status() {
+    this.today();
+    return { day: this.day, used: Math.round(this.used), limit: this.limit, free: 10000, resets: '00:00 UTC' };
   }
 }
 
