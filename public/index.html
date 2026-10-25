@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#1b2a4a">
+<title>KrONE</title>
+<meta name="description" content="KrONE: a daily game of rare questions. You get seven rare answers. Write the rarest question for each.">
+<meta property="og:title" content="KrONE">
+<meta property="og:description" content="Seven rare answers a day. Write the rarest question that leads to each one.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C19 4 10 14 10 26c0 13 14 22 18 28h8c4-6 18-15 18-28C54 14 45 4 32 4z' fill='%23ff6b5b'/%3E%3Crect x='26' y='54' width='12' height='8' rx='2' fill='%23a0703c'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="clouds"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="ground"></div>
+  </div>
+
+  <aside class="gauge" aria-label="Altitude">
+    <div class="rail">
+      <span class="tick" style="--at:1">7,000</span>
+      <span class="tick" style="--at:.714">5,000</span>
+      <span class="tick" style="--at:.428">3,000</span>
+      <span class="tick" style="--at:.143">1,000</span>
+      <span class="tick" style="--at:0">0 m</span>
+      <div class="fill"></div>
+      <div class="balloon" title="Your altitude">
+        <svg viewBox="0 0 40 56" aria-hidden="true"><path d="M20 2C10 2 3 9.5 3 19c0 10 10.5 17 14 23h6c3.5-6 14-13 14-23C37 9.5 30 2 20 2z" fill="#ff6b5b"/><path d="M20 2c-4 0-7 8-7 17s4 17 5 23h4c1-6 5-14 5-23S24 2 20 2z" fill="#ffd84d" opacity=".9"/><path d="M17 42l1 6m5-6l-1 6" stroke="#5a4030" stroke-width="1.2"/><rect x="15" y="48" width="10" height="7" rx="1.5" fill="#a0703c"/></svg>
+      </div>
+    </div>
+    <output class="alt-readout" id="altReadout">0 m</output>
+  </aside>
+
+  <header class="top">
+    <a class="logo" href="/" aria-label="KrONE home"><span class="kr">Kr</span><span class="one">ONE</span></a>
+    <span class="daytag" id="dayTag"></span>
+    <button class="icon-btn" id="helpBtn" aria-label="How to play">?</button>
+  </header>
+
+  <main id="app" aria-live="polite">
+    <section class="screen" id="loading"><p class="dim">Inflating the balloon…</p></section>
+  </main>
+
+  <dialog id="help">
+    <h2>How to play</h2>
+    <p>Krillion gives you a question and wants the rarest answer. <b>KrONE turns it around.</b></p>
+    <ol>
+      <li>Every day you get <b>7 rare answers</b>.</li>
+      <li>For each one, write the <b>rarest question</b> you can think of that still has that answer. You have <b>60 seconds</b>.</li>
+      <li>The question has to be true and has to lead to the answer, and it can't contain the answer.</li>
+      <li>The rarer your angle, the higher you climb. Questions everybody asks barely leave the ground.</li>
+    </ol>
+    <table class="tiers" id="tierTable"></table>
+    <p class="dim small">Rarity comes from an AI judge, how far your question is from the obvious ones, and how many other players asked something similar today. <b>One of ONE</b> means nobody else came close. Each point is 10 m, so a perfect day reaches 7,000 m.</p>
+    <form method="dialog"><button class="btn">Got it</button></form>
+  </dialog>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,2018 @@
+[
+  [
+    {
+      "answer": "Olm",
+      "category": "Animal",
+      "blurb": "A blind, pale cave salamander of the Dinaric Alps that can live over 100 years and go years without eating; locals called it the 'human fish'.",
+      "obvious": [
+        "What blind salamander lives in caves in Slovenia?",
+        "What amphibian is nicknamed the 'human fish'?",
+        "What is an olm?"
+      ]
+    },
+    {
+      "answer": "Kola Superdeep Borehole",
+      "category": "Place",
+      "blurb": "A Soviet scientific drilling project in Russia's Kola Peninsula that reached 12,262 m in 1989, the deepest artificial point on Earth.",
+      "obvious": [
+        "What is the deepest hole ever drilled?",
+        "What Soviet project tried to drill into the Earth's crust?",
+        "What is the Kola Superdeep Borehole?"
+      ]
+    },
+    {
+      "answer": "Surströmming",
+      "category": "Food",
+      "blurb": "Swedish fermented Baltic herring sold in tins that bulge from ongoing fermentation, famous for one of the strongest smells of any food.",
+      "obvious": [
+        "What is the smelliest fish in the world?",
+        "What fermented fish comes in a bulging tin in Sweden?",
+        "What is surströmming?"
+      ]
+    },
+    {
+      "answer": "Mechanical Turk",
+      "category": "Invention",
+      "blurb": "A chess-playing 'automaton' built by Wolfgang von Kempelen in 1770 that toured Europe for decades; a human chess master hid inside it.",
+      "obvious": [
+        "What fake chess robot fooled Europe in the 18th century?",
+        "What automaton played chess with a hidden human inside?",
+        "What was the Mechanical Turk?"
+      ]
+    },
+    {
+      "answer": "Mad Jack Churchill",
+      "category": "Person",
+      "blurb": "A British officer who fought in World War II armed with a longbow and a Scottish broadsword, and played bagpipes leading his men ashore.",
+      "obvious": [
+        "Who fought in World War II with a sword and a bow?",
+        "What soldier carried bagpipes into battle?",
+        "Who was Mad Jack Churchill?"
+      ]
+    },
+    {
+      "answer": "Mondegreen",
+      "category": "Word",
+      "blurb": "A misheard phrase or song lyric, coined in 1954 by Sylvia Wright, who heard 'laid him on the green' as 'Lady Mondegreen'.",
+      "obvious": [
+        "What is the word for a misheard lyric?",
+        "What do you call it when you mishear song words?",
+        "What is a mondegreen?"
+      ]
+    },
+    {
+      "answer": "Great Molasses Flood",
+      "category": "Event",
+      "blurb": "In January 1919 a huge storage tank burst in Boston's North End, sending a wave of molasses through the streets that killed 21 people.",
+      "obvious": [
+        "What disaster flooded Boston with syrup in 1919?",
+        "What sticky flood killed 21 people in Boston?",
+        "What was the Great Molasses Flood?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Antikythera mechanism",
+      "category": "Invention",
+      "blurb": "An ancient Greek hand-powered gear device from about the 2nd-1st century BC, recovered from a shipwreck in 1901, that predicted eclipses and planet positions.",
+      "obvious": [
+        "What is the oldest known analogue computer?",
+        "What ancient Greek device was found in a shipwreck?",
+        "What is the Antikythera mechanism?"
+      ]
+    },
+    {
+      "answer": "Violet Jessop",
+      "category": "Person",
+      "blurb": "An ocean-liner stewardess and nurse who was aboard the Olympic when it collided in 1911 and survived the sinkings of both Titanic and Britannic.",
+      "obvious": [
+        "Who survived the Titanic and the Britannic?",
+        "What stewardess was on all three Olympic-class ship disasters?",
+        "Who was Violet Jessop?"
+      ]
+    },
+    {
+      "answer": "Hapax legomenon",
+      "category": "Word",
+      "blurb": "A word that occurs only once in a given text, author's work or entire record of a language.",
+      "obvious": [
+        "What is a word that appears only once in a text?",
+        "What do linguists call a one-time word?",
+        "What is a hapax legomenon?"
+      ]
+    },
+    {
+      "answer": "Defenestrations of Prague",
+      "category": "Event",
+      "blurb": "Incidents in 1419 and 1618 in which people were thrown from windows in Prague; the 1618 victims survived, and the event helped spark the Thirty Years' War.",
+      "obvious": [
+        "What started the Thirty Years' War?",
+        "When were officials thrown out of a window in Prague?",
+        "What were the Defenestrations of Prague?"
+      ]
+    },
+    {
+      "answer": "Pink fairy armadillo",
+      "category": "Animal",
+      "blurb": "The world's smallest armadillo, about 10 cm long, with a pale pink shell; it burrows in the sandy plains of central Argentina.",
+      "obvious": [
+        "What is the smallest armadillo in the world?",
+        "What pink-shelled animal burrows in Argentina?",
+        "What is a pink fairy armadillo?"
+      ]
+    },
+    {
+      "answer": "Lake Nyos",
+      "category": "Place",
+      "blurb": "A crater lake in Cameroon that in 1986 suddenly released a cloud of carbon dioxide, suffocating about 1,700 people in nearby valleys.",
+      "obvious": [
+        "What lake released a deadly gas cloud in 1986?",
+        "Where did a limnic eruption occur in Cameroon?",
+        "What is Lake Nyos?"
+      ]
+    },
+    {
+      "answer": "Casu marzu",
+      "category": "Food",
+      "blurb": "A Sardinian sheep's-milk cheese deliberately left to be colonised by cheese fly larvae, which soften it into a pungent cream.",
+      "obvious": [
+        "What cheese contains live maggots?",
+        "What illegal cheese comes from Sardinia?",
+        "What is casu marzu?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Dancing Plague of 1518",
+      "category": "Event",
+      "blurb": "An outbreak in Strasbourg in 1518 when dozens of people danced uncontrollably for days or weeks, possibly a form of mass hysteria.",
+      "obvious": [
+        "When did people dance until they collapsed?",
+        "What mass hysteria hit Strasbourg in 1518?",
+        "What was the Dancing Plague of 1518?"
+      ]
+    },
+    {
+      "answer": "Welwitschia",
+      "category": "Plant",
+      "blurb": "A Namib Desert plant that grows only two leaves in its whole life, which keep lengthening for centuries; some individuals exceed 1,000 years old.",
+      "obvious": [
+        "What desert plant only ever grows two leaves?",
+        "What plant is a famous living fossil of the Namib Desert?",
+        "What is Welwitschia?"
+      ]
+    },
+    {
+      "answer": "Darvaza gas crater",
+      "category": "Place",
+      "blurb": "A natural-gas crater in Turkmenistan's Karakum Desert set alight decades ago and still burning, nicknamed the 'Door to Hell'.",
+      "obvious": [
+        "What is the Door to Hell?",
+        "What burning crater is in Turkmenistan?",
+        "What is the Darvaza gas crater?"
+      ]
+    },
+    {
+      "answer": "Hákarl",
+      "category": "Food",
+      "blurb": "An Icelandic dish of Greenland shark meat fermented and then hung to dry for months, known for its strong ammonia smell.",
+      "obvious": [
+        "What fermented shark dish comes from Iceland?",
+        "What is Iceland's most notorious food?",
+        "What is hákarl?"
+      ]
+    },
+    {
+      "answer": "Baghdad Battery",
+      "category": "Object",
+      "blurb": "A clay jar with a copper cylinder and iron rod found near Baghdad in the 1930s, speculated to be an ancient electric battery.",
+      "obvious": [
+        "What ancient jar might have been a battery?",
+        "What Parthian artefact is said to produce electricity?",
+        "What is the Baghdad Battery?"
+      ]
+    },
+    {
+      "answer": "Tsutomu Yamaguchi",
+      "category": "Person",
+      "blurb": "A Japanese engineer in Hiroshima on business on 6 August 1945 who returned home to Nagasaki and survived both atomic bombings; he died in 2010.",
+      "obvious": [
+        "Who survived both atomic bombs?",
+        "Who is the officially recognised double atomic bomb survivor?",
+        "Who was Tsutomu Yamaguchi?"
+      ]
+    },
+    {
+      "answer": "Apophenia",
+      "category": "Concept",
+      "blurb": "The tendency to perceive meaningful connections or patterns between unrelated things, a term coined by psychiatrist Klaus Conrad in 1958.",
+      "obvious": [
+        "What is the tendency to see patterns in randomness?",
+        "What word means finding meaning in coincidences?",
+        "What is apophenia?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Garum",
+      "category": "Food",
+      "blurb": "A fermented fish sauce that was a staple condiment of ancient Rome, made by salting fish and leaving them to break down in the sun.",
+      "obvious": [
+        "What fish sauce did the ancient Romans use?",
+        "What was the Roman equivalent of ketchup?",
+        "What is garum?"
+      ]
+    },
+    {
+      "answer": "Starlite",
+      "category": "Material",
+      "blurb": "A heat-resistant plastic material invented by British hairdresser Maurice Ward in the 1980s; he died in 2011 without making its formula public.",
+      "obvious": [
+        "What material could withstand a nuclear blast's heat?",
+        "What heat shield did a hairdresser invent?",
+        "What is Starlite?"
+      ]
+    },
+    {
+      "answer": "Hiroo Onoda",
+      "category": "Person",
+      "blurb": "A Japanese army officer who kept fighting in the jungles of Lubang Island, Philippines, until 1974, refusing to believe World War II had ended.",
+      "obvious": [
+        "Which soldier kept fighting until 1974?",
+        "Who was the last Japanese holdout to surrender?",
+        "Who was Hiroo Onoda?"
+      ]
+    },
+    {
+      "answer": "Tmesis",
+      "category": "Word",
+      "blurb": "Splitting a word or phrase by inserting another word into the middle of it, as in 'abso-bloody-lutely'.",
+      "obvious": [
+        "What is it called to put a word inside another word?",
+        "What figure of speech is abso-bloody-lutely?",
+        "What is tmesis?"
+      ]
+    },
+    {
+      "answer": "London Beer Flood",
+      "category": "Event",
+      "blurb": "In October 1814 a giant vat at Meux's brewery in London burst, releasing over a million litres of beer into the streets and killing eight people.",
+      "obvious": [
+        "What flood of beer hit London in 1814?",
+        "What brewery accident flooded St Giles?",
+        "What was the London Beer Flood?"
+      ]
+    },
+    {
+      "answer": "Dragon's blood tree",
+      "category": "Plant",
+      "blurb": "An umbrella-shaped tree found only on Yemen's Socotra archipelago, prized for its deep red resin used as dye, varnish and medicine.",
+      "obvious": [
+        "What umbrella-shaped tree grows on Socotra?",
+        "What tree bleeds red resin?",
+        "What is a dragon's blood tree?"
+      ]
+    },
+    {
+      "answer": "Bir Tawil",
+      "category": "Place",
+      "blurb": "A desert area between Egypt and Sudan claimed by neither country because of conflicting border lines, one of the few unclaimed lands on Earth.",
+      "obvious": [
+        "What land is claimed by no country?",
+        "What territory do Egypt and Sudan both reject?",
+        "What is Bir Tawil?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Eggcorn",
+      "category": "Word",
+      "blurb": "A misheard word or phrase replaced by one that still makes sense, like 'acorn' becoming 'eggcorn'; the term was coined by linguists in 2003.",
+      "obvious": [
+        "What is the word for a sensible mistaken word substitution?",
+        "What do you call saying 'for all intensive purposes'?",
+        "What is an eggcorn?"
+      ]
+    },
+    {
+      "answer": "Great Emu War",
+      "category": "Event",
+      "blurb": "A 1932 Australian military operation using soldiers with machine guns to cull emus damaging crops in Western Australia; it largely failed.",
+      "obvious": [
+        "What war did Australia lose to birds?",
+        "When did the Australian army fight emus?",
+        "What was the Great Emu War?"
+      ]
+    },
+    {
+      "answer": "Babirusa",
+      "category": "Animal",
+      "blurb": "A wild pig of Sulawesi, Indonesia, whose males have upper tusks that grow up through the top of the snout and curve back toward the forehead.",
+      "obvious": [
+        "What pig has tusks that grow through its snout?",
+        "What wild pig lives on Sulawesi?",
+        "What is a babirusa?"
+      ]
+    },
+    {
+      "answer": "Point Nemo",
+      "category": "Place",
+      "blurb": "The spot in the South Pacific farthest from any land, about 2,700 km from the nearest coast; retired spacecraft are steered down near it.",
+      "obvious": [
+        "What is the most remote place in the ocean?",
+        "Where is the spacecraft cemetery?",
+        "What is Point Nemo?"
+      ]
+    },
+    {
+      "answer": "Mämmi",
+      "category": "Food",
+      "blurb": "A traditional Finnish Easter pudding of rye flour and malted rye, slow-baked until dark brown and eaten cold with cream and sugar.",
+      "obvious": [
+        "What is the Finnish Easter dessert?",
+        "What rye pudding is eaten in Finland at Easter?",
+        "What is mämmi?"
+      ]
+    },
+    {
+      "answer": "Greek fire",
+      "category": "Invention",
+      "blurb": "A Byzantine incendiary weapon that kept burning on water, used against Arab fleets from the 7th century; its exact recipe is lost.",
+      "obvious": [
+        "What fire could burn on water?",
+        "What secret weapon did the Byzantine Empire use?",
+        "What is Greek fire?"
+      ]
+    },
+    {
+      "answer": "Annie Edson Taylor",
+      "category": "Person",
+      "blurb": "A schoolteacher who on her 63rd birthday in 1901 became the first person to survive going over Niagara Falls in a barrel.",
+      "obvious": [
+        "Who first went over Niagara Falls in a barrel?",
+        "What 63-year-old woman rode a barrel over Niagara Falls?",
+        "Who was Annie Edson Taylor?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Centralia",
+      "category": "Place",
+      "blurb": "A nearly abandoned borough in Pennsylvania where an underground coal-seam fire has been burning since 1962.",
+      "obvious": [
+        "What town has had a mine fire burning since 1962?",
+        "What Pennsylvania town was abandoned because of an underground fire?",
+        "What is Centralia?"
+      ]
+    },
+    {
+      "answer": "Salmiakki",
+      "category": "Food",
+      "blurb": "A salty liquorice popular in the Nordic countries, flavoured with ammonium chloride, which gives it a sharp, tongue-tingling taste.",
+      "obvious": [
+        "What is salty liquorice called in Finland?",
+        "What candy is flavoured with ammonium chloride?",
+        "What is salmiakki?"
+      ]
+    },
+    {
+      "answer": "Prince Rupert's drop",
+      "category": "Object",
+      "blurb": "A tadpole-shaped glass bead made by dripping molten glass into water: the head withstands a hammer blow, but snapping the tail shatters it entirely.",
+      "obvious": [
+        "What glass drop can survive a hammer but explodes if you break its tail?",
+        "What toughened glass tadpole is made by dripping glass in water?",
+        "What is a Prince Rupert's drop?"
+      ]
+    },
+    {
+      "answer": "Roy Sullivan",
+      "category": "Person",
+      "blurb": "A Shenandoah National Park ranger struck by lightning seven separate times between 1942 and 1977, surviving all of them.",
+      "obvious": [
+        "Who was struck by lightning the most times?",
+        "Which park ranger survived seven lightning strikes?",
+        "Who was Roy Sullivan?"
+      ]
+    },
+    {
+      "answer": "Ultracrepidarian",
+      "category": "Word",
+      "blurb": "A person who gives opinions on matters beyond their knowledge, from a Latin rebuke to a cobbler: 'shoemaker, not above the sandal'.",
+      "obvious": [
+        "What word describes someone who talks about things they know nothing about?",
+        "What is a word for a know-it-all outside their expertise?",
+        "What does ultracrepidarian mean?"
+      ]
+    },
+    {
+      "answer": "Carrington Event",
+      "category": "Event",
+      "blurb": "The most intense geomagnetic storm on record, in 1859, which caused auroras near the tropics and sparked telegraph systems.",
+      "obvious": [
+        "What was the largest solar storm in history?",
+        "What 1859 event set telegraph wires on fire?",
+        "What was the Carrington Event?"
+      ]
+    },
+    {
+      "answer": "Glaucus atlanticus",
+      "category": "Animal",
+      "blurb": "The 'blue dragon', a small blue sea slug that floats upside down and eats Portuguese man o' war, storing their stinging cells for its own defence.",
+      "obvious": [
+        "What sea slug eats Portuguese man o' war?",
+        "What is the blue dragon of the ocean?",
+        "What is Glaucus atlanticus?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Ching Shih",
+      "category": "Person",
+      "blurb": "A former Cantonese courtesan who commanded the Red Flag Fleet of tens of thousands of pirates in the early 1800s, then negotiated an amnesty and retired.",
+      "obvious": [
+        "Who was the most successful pirate in history?",
+        "Which woman led the Red Flag Fleet?",
+        "Who was Ching Shih?"
+      ]
+    },
+    {
+      "answer": "Snollygoster",
+      "category": "Word",
+      "blurb": "An old American slang term for a shrewd, unprincipled person, especially a politician.",
+      "obvious": [
+        "What is a funny word for a dishonest politician?",
+        "What 19th-century slang means unprincipled person?",
+        "What is a snollygoster?"
+      ]
+    },
+    {
+      "answer": "Year Without a Summer",
+      "category": "Event",
+      "blurb": "1816, when the 1815 Tambora eruption cooled the climate, causing crop failures; that gloomy summer Mary Shelley began Frankenstein.",
+      "obvious": [
+        "What year had no summer?",
+        "What happened after Mount Tambora erupted?",
+        "What was the Year Without a Summer?"
+      ]
+    },
+    {
+      "answer": "Shoebill",
+      "category": "Animal",
+      "blurb": "A huge grey wading bird of East African swamps with an enormous shoe-shaped bill, famous for standing motionless for long periods.",
+      "obvious": [
+        "What bird has a bill shaped like a shoe?",
+        "What large stork-like bird lives in African swamps?",
+        "What is a shoebill?"
+      ]
+    },
+    {
+      "answer": "Oymyakon",
+      "category": "Place",
+      "blurb": "A village in Russia's Yakutia, often called the coldest permanently inhabited place, where around -67.7 °C was recorded in 1933.",
+      "obvious": [
+        "What is the coldest inhabited village on Earth?",
+        "Where in Siberia is the Pole of Cold?",
+        "What is Oymyakon?"
+      ]
+    },
+    {
+      "answer": "Kumis",
+      "category": "Drink",
+      "blurb": "A fermented mare's milk drink of the Central Asian steppes, slightly sour and mildly alcoholic, drunk for centuries by nomadic peoples.",
+      "obvious": [
+        "What drink is made from fermented mare's milk?",
+        "What is the traditional drink of the steppe nomads?",
+        "What is kumis?"
+      ]
+    },
+    {
+      "answer": "Lycurgus Cup",
+      "category": "Artwork",
+      "blurb": "A 4th-century Roman glass cup in the British Museum that looks green in reflected light and red when lit from within, thanks to gold and silver nanoparticles.",
+      "obvious": [
+        "What Roman cup changes colour in the light?",
+        "What ancient object used nanotechnology?",
+        "What is the Lycurgus Cup?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Hoatzin",
+      "category": "Animal",
+      "blurb": "A South American bird that ferments leaves in its crop, smells like manure, and whose chicks have claws on their wings for climbing.",
+      "obvious": [
+        "What bird's chicks have claws on their wings?",
+        "What bird is nicknamed the stinkbird?",
+        "What is a hoatzin?"
+      ]
+    },
+    {
+      "answer": "Tristan da Cunha",
+      "category": "Place",
+      "blurb": "A volcanic South Atlantic island, the most remote inhabited archipelago, whose only settlement is Edinburgh of the Seven Seas.",
+      "obvious": [
+        "What is the most remote inhabited island?",
+        "What island's settlement is Edinburgh of the Seven Seas?",
+        "What is Tristan da Cunha?"
+      ]
+    },
+    {
+      "answer": "Silphium",
+      "category": "Food",
+      "blurb": "A plant from ancient Cyrene in Libya prized by Greeks and Romans as a seasoning and medicine, harvested to extinction by Roman times.",
+      "obvious": [
+        "What spice did the Romans drive to extinction?",
+        "What plant was on the coins of Cyrene?",
+        "What is silphium?"
+      ]
+    },
+    {
+      "answer": "Nilometer",
+      "category": "Object",
+      "blurb": "A structure for measuring the Nile's water level during the annual flood, used in ancient and medieval Egypt to predict harvests and set taxes.",
+      "obvious": [
+        "How did ancient Egyptians measure the Nile flood?",
+        "What structure on Roda Island measures the river?",
+        "What is a nilometer?"
+      ]
+    },
+    {
+      "answer": "Emperor Norton",
+      "category": "Person",
+      "blurb": "Joshua Norton, a ruined businessman who in 1859 proclaimed himself Emperor of the United States; San Francisco indulged him and accepted his own banknotes.",
+      "obvious": [
+        "Who declared himself Emperor of the United States?",
+        "What San Francisco eccentric issued his own money?",
+        "Who was Emperor Norton?"
+      ]
+    },
+    {
+      "answer": "Kummerspeck",
+      "category": "Word",
+      "blurb": "German for weight gained from emotional overeating; literally 'grief bacon'.",
+      "obvious": [
+        "What is the German word for grief bacon?",
+        "What German word means weight gained from stress eating?",
+        "What is Kummerspeck?"
+      ]
+    },
+    {
+      "answer": "Tanganyika laughter epidemic",
+      "category": "Event",
+      "blurb": "A 1962 outbreak of mass psychogenic laughter that began at a girls' boarding school in Kashasha and spread so widely schools were closed.",
+      "obvious": [
+        "What was the laughing epidemic?",
+        "Where did contagious laughter close schools in 1962?",
+        "What was the Tanganyika laughter epidemic?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Aerogel",
+      "category": "Material",
+      "blurb": "An ultralight solid made by replacing the liquid in a gel with gas, nicknamed 'frozen smoke'; NASA used it to capture comet dust.",
+      "obvious": [
+        "What is the lightest solid material?",
+        "What material is called frozen smoke?",
+        "What is aerogel?"
+      ]
+    },
+    {
+      "answer": "Timothy Dexter",
+      "category": "Person",
+      "blurb": "An eccentric Massachusetts merchant who wrote a book with no punctuation, A Pickle for the Knowing Ones, then added a page of punctuation marks to sprinkle as readers pleased.",
+      "obvious": [
+        "Who wrote a book without punctuation?",
+        "Which merchant sold warming pans to the West Indies?",
+        "Who was Timothy Dexter?"
+      ]
+    },
+    {
+      "answer": "Tsundoku",
+      "category": "Word",
+      "blurb": "Japanese for buying books and letting them pile up unread.",
+      "obvious": [
+        "What is the word for buying books and never reading them?",
+        "What Japanese word describes a stack of unread books?",
+        "What is tsundoku?"
+      ]
+    },
+    {
+      "answer": "Ball lightning",
+      "category": "Phenomenon",
+      "blurb": "A rare, poorly understood phenomenon in which glowing spheres appear during thunderstorms, drifting for seconds before vanishing.",
+      "obvious": [
+        "What is glowing ball-shaped lightning?",
+        "What strange lightning floats in the air?",
+        "What is ball lightning?"
+      ]
+    },
+    {
+      "answer": "Sea pig",
+      "category": "Animal",
+      "blurb": "Scotoplanes, a plump deep-sea sea cucumber that walks across the abyssal seafloor on enlarged tube feet, often in large herds.",
+      "obvious": [
+        "What deep-sea sea cucumber walks on legs?",
+        "What pink deep-sea creature is named after a farm animal?",
+        "What is a sea pig?"
+      ]
+    },
+    {
+      "answer": "Baarle-Hertog",
+      "category": "Place",
+      "blurb": "A Belgian municipality made of enclaves inside the Netherlands, with Dutch counter-enclaves inside it; borders even run through houses.",
+      "obvious": [
+        "What town has a border running through its houses?",
+        "What Belgian town is a patchwork of enclaves in the Netherlands?",
+        "What is Baarle-Hertog?"
+      ]
+    },
+    {
+      "answer": "Pulque",
+      "category": "Drink",
+      "blurb": "A milky, viscous alcoholic drink made by fermenting the sap of the maguey agave, brewed in Mexico since pre-Columbian times.",
+      "obvious": [
+        "What Aztec drink is made from agave sap?",
+        "What milky fermented drink comes from Mexico?",
+        "What is pulque?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Brinicle",
+      "category": "Phenomenon",
+      "blurb": "A downward-growing tube of ice that forms under sea ice as super-cold brine sinks, freezing sea creatures it touches on the seabed.",
+      "obvious": [
+        "What is the icicle of death?",
+        "What underwater ice formation freezes starfish?",
+        "What is a brinicle?"
+      ]
+    },
+    {
+      "answer": "Mata mata",
+      "category": "Animal",
+      "blurb": "A South American freshwater turtle with a flat, triangular, leaf-like head and shell that lies in wait and sucks prey in with a sudden gulp.",
+      "obvious": [
+        "What turtle looks like a pile of dead leaves?",
+        "What turtle has a flat triangular head?",
+        "What is a mata mata?"
+      ]
+    },
+    {
+      "answer": "Pheasant Island",
+      "category": "Place",
+      "blurb": "A tiny river island on the Bidasoa between France and Spain whose sovereignty switches between the two countries every six months.",
+      "obvious": [
+        "What island changes countries every six months?",
+        "Where was the 1659 Treaty of the Pyrenees signed?",
+        "What is Pheasant Island?"
+      ]
+    },
+    {
+      "answer": "Pemmican",
+      "category": "Food",
+      "blurb": "A dense food of dried, pounded meat mixed with rendered fat and sometimes berries, created by Indigenous North Americans and used by polar explorers.",
+      "obvious": [
+        "What meat-and-fat food did Native Americans make for travel?",
+        "What did polar explorers eat for energy?",
+        "What is pemmican?"
+      ]
+    },
+    {
+      "answer": "Dymaxion car",
+      "category": "Invention",
+      "blurb": "A three-wheeled, teardrop-shaped car designed by Buckminster Fuller in 1933; only three prototypes were built.",
+      "obvious": [
+        "What three-wheeled car did Buckminster Fuller design?",
+        "What teardrop car was built in 1933?",
+        "What is the Dymaxion car?"
+      ]
+    },
+    {
+      "answer": "Hetty Green",
+      "category": "Person",
+      "blurb": "A Gilded Age financier, once the richest woman in America, so famously miserly she was nicknamed the 'Witch of Wall Street'.",
+      "obvious": [
+        "Who was the Witch of Wall Street?",
+        "Who was the richest and stingiest woman in America?",
+        "Who was Hetty Green?"
+      ]
+    },
+    {
+      "answer": "Mamihlapinatapai",
+      "category": "Word",
+      "blurb": "A Yaghan word from Tierra del Fuego for a look shared between two people who each hope the other will start something both want.",
+      "obvious": [
+        "What is the most succinct word in the world?",
+        "What word describes a meaningful look between two people?",
+        "What does mamihlapinatapai mean?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Hardtack",
+      "category": "Food",
+      "blurb": "A very hard, long-lasting biscuit of flour, water and salt eaten by sailors and soldiers, often soaked before eating.",
+      "obvious": [
+        "What biscuit did sailors eat on long voyages?",
+        "What was the Civil War soldier's cracker?",
+        "What is hardtack?"
+      ]
+    },
+    {
+      "answer": "Phonautograph",
+      "category": "Invention",
+      "blurb": "An 1857 device by Édouard-Léon Scott de Martinville that traced sound waves on paper; it could not play back, but 2008 researchers made one of its recordings audible.",
+      "obvious": [
+        "What was the first device to record sound?",
+        "What invention recorded sound before Edison's phonograph?",
+        "What is the phonautograph?"
+      ]
+    },
+    {
+      "answer": "Henrietta Swan Leavitt",
+      "category": "Person",
+      "blurb": "A Harvard 'computer' who discovered that Cepheid variable stars' brightness relates to their pulsing period, giving astronomers a way to measure cosmic distances.",
+      "obvious": [
+        "Who discovered the Cepheid period-luminosity relation?",
+        "Which Harvard computer helped measure the universe?",
+        "Who was Henrietta Swan Leavitt?"
+      ]
+    },
+    {
+      "answer": "Rongorongo",
+      "category": "Language",
+      "blurb": "A system of glyphs carved on wooden tablets from Easter Island (Rapa Nui) that remains undeciphered.",
+      "obvious": [
+        "What is the undeciphered script of Easter Island?",
+        "What writing was found on Rapa Nui tablets?",
+        "What is rongorongo?"
+      ]
+    },
+    {
+      "answer": "Morning Glory cloud",
+      "category": "Phenomenon",
+      "blurb": "A rare roll cloud up to 1,000 km long that appears in spring over the Gulf of Carpentaria near Burketown, Australia, ridden by glider pilots.",
+      "obvious": [
+        "What is the longest cloud in the world?",
+        "What roll cloud do glider pilots surf in Australia?",
+        "What is the Morning Glory cloud?"
+      ]
+    },
+    {
+      "answer": "Saola",
+      "category": "Animal",
+      "blurb": "A rarely seen forest bovine of the Annamite Mountains of Vietnam and Laos, discovered by science in 1992 and nicknamed the 'Asian unicorn'.",
+      "obvious": [
+        "What animal is called the Asian unicorn?",
+        "What large mammal was discovered in Vietnam in 1992?",
+        "What is a saola?"
+      ]
+    },
+    {
+      "answer": "Dallol",
+      "category": "Place",
+      "blurb": "A hydrothermal field in Ethiopia's Danakil Depression with acid hot springs and neon yellow and green salt formations, one of the hottest places on Earth.",
+      "obvious": [
+        "What place in Ethiopia looks like an alien planet?",
+        "What hydrothermal site has yellow and green acid pools?",
+        "What is Dallol?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Linear A",
+      "category": "Language",
+      "blurb": "The undeciphered writing system of Minoan Crete; its successor Linear B was deciphered by Michael Ventris in 1952.",
+      "obvious": [
+        "What Minoan script has never been deciphered?",
+        "What writing system came before Linear B?",
+        "What is Linear A?"
+      ]
+    },
+    {
+      "answer": "Catatumbo lightning",
+      "category": "Phenomenon",
+      "blurb": "Near-nightly thunderstorms over the mouth of the Catatumbo River at Lake Maracaibo, Venezuela, one of the most lightning-dense places on Earth.",
+      "obvious": [
+        "Where does lightning strike almost every night?",
+        "What is the everlasting storm of Venezuela?",
+        "What is Catatumbo lightning?"
+      ]
+    },
+    {
+      "answer": "Nepenthes rajah",
+      "category": "Plant",
+      "blurb": "The giant pitcher plant of Mount Kinabalu in Borneo, whose huge pitchers serve as toilets for tree shrews and occasionally trap small mammals.",
+      "obvious": [
+        "What is the largest pitcher plant?",
+        "What carnivorous plant grows on Mount Kinabalu?",
+        "What is Nepenthes rajah?"
+      ]
+    },
+    {
+      "answer": "Lake Hillier",
+      "category": "Place",
+      "blurb": "A bubblegum-pink salt lake on Middle Island off Western Australia, coloured by salt-loving algae and bacteria.",
+      "obvious": [
+        "What lake is naturally pink?",
+        "What pink lake is in Western Australia?",
+        "What is Lake Hillier?"
+      ]
+    },
+    {
+      "answer": "Huitlacoche",
+      "category": "Food",
+      "blurb": "Corn smut, a fungus that swells corn kernels into grey-black galls, cooked as a prized delicacy in Mexico and called Mexican truffle.",
+      "obvious": [
+        "What fungus on corn is eaten in Mexico?",
+        "What is the Mexican truffle?",
+        "What is huitlacoche?"
+      ]
+    },
+    {
+      "answer": "Digesting Duck",
+      "category": "Invention",
+      "blurb": "A 1739 automaton by Jacques de Vaucanson that appeared to eat grain, digest it and excrete it; the droppings were actually preloaded.",
+      "obvious": [
+        "What mechanical duck appeared to eat and digest?",
+        "What famous automaton did Vaucanson build?",
+        "What is the Digesting Duck?"
+      ]
+    },
+    {
+      "answer": "George Psalmanazar",
+      "category": "Person",
+      "blurb": "A Frenchman who posed in early-1700s London as a native of Formosa (Taiwan) and published a fake account of the island with an invented language.",
+      "obvious": [
+        "Who pretended to be from Formosa?",
+        "Who was the greatest literary impostor of the 18th century?",
+        "Who was George Psalmanazar?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Hashima Island",
+      "category": "Place",
+      "blurb": "A tiny coal-mining island off Nagasaki, Japan, once packed with concrete apartments and abandoned in 1974; nicknamed Battleship Island.",
+      "obvious": [
+        "What abandoned island looks like a battleship?",
+        "What Japanese island was abandoned in 1974?",
+        "What is Hashima Island?"
+      ]
+    },
+    {
+      "answer": "Lutefisk",
+      "category": "Food",
+      "blurb": "A Nordic Christmas dish of dried whitefish, usually cod, soaked in lye until it becomes gelatinous, then rinsed and cooked.",
+      "obvious": [
+        "What fish is soaked in lye?",
+        "What jelly-like fish do Norwegians eat at Christmas?",
+        "What is lutefisk?"
+      ]
+    },
+    {
+      "answer": "Quipu",
+      "category": "Object",
+      "blurb": "A recording device of knotted coloured cords used by the Inca Empire to store numbers and possibly narratives, without a written script.",
+      "obvious": [
+        "How did the Inca keep records without writing?",
+        "What Inca device used knots on strings?",
+        "What is a quipu?"
+      ]
+    },
+    {
+      "answer": "Jeanne Baret",
+      "category": "Person",
+      "blurb": "A French botanist who, disguised as a man, sailed on Bougainville's 1766-69 expedition and became the first woman known to circumnavigate the globe.",
+      "obvious": [
+        "Who was the first woman to sail around the world?",
+        "Who disguised herself as a man on Bougainville's voyage?",
+        "Who was Jeanne Baret?"
+      ]
+    },
+    {
+      "answer": "Silbo Gomero",
+      "category": "Language",
+      "blurb": "A whistled form of Spanish used to communicate across the deep ravines of La Gomera in the Canary Islands, recognised by UNESCO in 2009.",
+      "obvious": [
+        "What is the whistled language of the Canary Islands?",
+        "What language is spoken by whistling?",
+        "What is Silbo Gomero?"
+      ]
+    },
+    {
+      "answer": "Blood Falls",
+      "category": "Phenomenon",
+      "blurb": "An outflow of iron-rich, salty water from Antarctica's Taylor Glacier that turns blood red as the iron oxidises in air.",
+      "obvious": [
+        "What Antarctic waterfall is red?",
+        "What glacier appears to bleed?",
+        "What is Blood Falls?"
+      ]
+    },
+    {
+      "answer": "Wollemi pine",
+      "category": "Plant",
+      "blurb": "An ancient conifer known only from fossils until 1994, when fewer than 100 wild trees were found in a gorge in New South Wales, Australia.",
+      "obvious": [
+        "What tree was found alive in Australia in 1994?",
+        "What conifer is called a dinosaur tree?",
+        "What is the Wollemi pine?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Grace O'Malley",
+      "category": "Person",
+      "blurb": "A 16th-century Irish chieftain and sea captain from Connacht, called the Pirate Queen, who met Elizabeth I in person in 1593.",
+      "obvious": [
+        "Who was the Irish pirate queen?",
+        "Which Irish chieftain met Elizabeth I?",
+        "Who was Grace O'Malley?"
+      ]
+    },
+    {
+      "answer": "Boustrophedon",
+      "category": "Word",
+      "blurb": "Writing in which alternate lines run in opposite directions, like an ox ploughing a field, seen in early Greek inscriptions.",
+      "obvious": [
+        "What is the word for writing that changes direction every line?",
+        "How were some ancient Greek inscriptions written?",
+        "What is boustrophedon?"
+      ]
+    },
+    {
+      "answer": "Brocken spectre",
+      "category": "Phenomenon",
+      "blurb": "The giant-looking shadow of an observer cast onto mist or cloud, often ringed by a rainbow halo, named after a peak in Germany's Harz Mountains.",
+      "obvious": [
+        "What is the giant shadow you see on clouds?",
+        "What optical illusion appears on misty mountains?",
+        "What is a Brocken spectre?"
+      ]
+    },
+    {
+      "answer": "Turritopsis dohrnii",
+      "category": "Animal",
+      "blurb": "The 'immortal jellyfish', a tiny hydrozoan that can revert from adult medusa back to its juvenile polyp stage, potentially indefinitely.",
+      "obvious": [
+        "What jellyfish is biologically immortal?",
+        "What animal can reverse its own ageing?",
+        "What is Turritopsis dohrnii?"
+      ]
+    },
+    {
+      "answer": "Mount Roraima",
+      "category": "Place",
+      "blurb": "A sheer-sided tabletop mountain (tepui) where Venezuela, Brazil and Guyana meet, said to have inspired Conan Doyle's The Lost World.",
+      "obvious": [
+        "What tabletop mountain inspired The Lost World?",
+        "What tepui sits on the border of Venezuela, Brazil and Guyana?",
+        "What is Mount Roraima?"
+      ]
+    },
+    {
+      "answer": "Bird's nest soup",
+      "category": "Food",
+      "blurb": "A Chinese delicacy made from the edible nests of swiftlets, which are built from the birds' own hardened saliva.",
+      "obvious": [
+        "What soup is made from bird saliva?",
+        "What is the most expensive Chinese soup?",
+        "What is bird's nest soup?"
+      ]
+    },
+    {
+      "answer": "Voynich manuscript",
+      "category": "Object",
+      "blurb": "An illustrated early-15th-century codex written in an unknown script that no one has deciphered, held at Yale's Beinecke Library.",
+      "obvious": [
+        "What is the most mysterious undeciphered book?",
+        "What medieval manuscript is written in an unknown language?",
+        "What is the Voynich manuscript?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Takahe",
+      "category": "Animal",
+      "blurb": "A large flightless blue-green rail of New Zealand declared extinct in 1898, then rediscovered in the Murchison Mountains in 1948.",
+      "obvious": [
+        "What flightless bird was rediscovered in New Zealand in 1948?",
+        "What bird was thought extinct for 50 years in New Zealand?",
+        "What is a takahe?"
+      ]
+    },
+    {
+      "answer": "Derinkuyu",
+      "category": "Place",
+      "blurb": "A multi-level ancient underground city in Cappadocia, Turkey, able to shelter thousands, rediscovered in 1963 during a home renovation.",
+      "obvious": [
+        "What is the largest underground city in Turkey?",
+        "What underground city was found behind a basement wall?",
+        "What is Derinkuyu?"
+      ]
+    },
+    {
+      "answer": "Stargazy pie",
+      "category": "Food",
+      "blurb": "A Cornish pie with whole pilchard heads poking up through the crust, eaten in Mousehole on Tom Bawcock's Eve, 23 December.",
+      "obvious": [
+        "What pie has fish heads sticking out of it?",
+        "What pie is eaten on Tom Bawcock's Eve?",
+        "What is stargazy pie?"
+      ]
+    },
+    {
+      "answer": "Gömböc",
+      "category": "Object",
+      "blurb": "A convex shape with just one stable and one unstable balance point, so it always rights itself; its existence was proven in Hungary in 2006.",
+      "obvious": [
+        "What shape always rolls back upright?",
+        "What self-righting object was invented in Hungary?",
+        "What is a gömböc?"
+      ]
+    },
+    {
+      "answer": "Cornelius Drebbel",
+      "category": "Person",
+      "blurb": "A Dutch inventor who around 1620 built the first navigable submarine and tested it in the River Thames for King James I.",
+      "obvious": [
+        "Who built the first submarine?",
+        "What inventor rowed a submarine in the Thames?",
+        "Who was Cornelius Drebbel?"
+      ]
+    },
+    {
+      "answer": "Dord",
+      "category": "Word",
+      "blurb": "A ghost word printed in Webster's 1934 dictionary as meaning 'density', born from a misread note saying 'D or d'.",
+      "obvious": [
+        "What is the most famous ghost word in a dictionary?",
+        "What fake word was in Webster's dictionary by mistake?",
+        "What is dord?"
+      ]
+    },
+    {
+      "answer": "Glass harmonica",
+      "category": "Instrument",
+      "blurb": "An instrument invented by Benjamin Franklin in 1761 of nested spinning glass bowls played with wet fingers; Mozart wrote music for it.",
+      "obvious": [
+        "What instrument did Benjamin Franklin invent?",
+        "What instrument is played with wet fingers on glass?",
+        "What is a glass harmonica?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Bathysphere",
+      "category": "Invention",
+      "blurb": "A steel diving sphere in which William Beebe and Otis Barton descended 923 m off Bermuda in 1934, a depth record at the time.",
+      "obvious": [
+        "What sphere did William Beebe dive in?",
+        "What was the first deep-sea submersible sphere?",
+        "What is a bathysphere?"
+      ]
+    },
+    {
+      "answer": "Charles Blondin",
+      "category": "Person",
+      "blurb": "A French acrobat who crossed the Niagara Gorge on a tightrope in 1859 and repeated it blindfolded, on stilts, and carrying his manager.",
+      "obvious": [
+        "Who crossed Niagara Falls on a tightrope?",
+        "What acrobat cooked an omelette on a high wire?",
+        "Who was Charles Blondin?"
+      ]
+    },
+    {
+      "answer": "Floccinaucinihilipilification",
+      "category": "Word",
+      "blurb": "A famously long English word meaning the act of estimating something as worthless.",
+      "obvious": [
+        "What is the longest non-technical English word?",
+        "What long word means deeming something worthless?",
+        "What does floccinaucinihilipilification mean?"
+      ]
+    },
+    {
+      "answer": "Hurdy-gurdy",
+      "category": "Instrument",
+      "blurb": "A stringed instrument sounded by a rosined wheel turned with a crank while keys press the strings, popular in medieval Europe.",
+      "obvious": [
+        "What instrument has a crank and a wheel?",
+        "What medieval instrument sounds like bagpipes with strings?",
+        "What is a hurdy-gurdy?"
+      ]
+    },
+    {
+      "answer": "Lord Howe Island stick insect",
+      "category": "Animal",
+      "blurb": "A large flightless insect thought wiped out by rats around 1920, then found surviving in 2001 on the sea stack Ball's Pyramid.",
+      "obvious": [
+        "What insect is called the tree lobster?",
+        "What insect was rediscovered on Ball's Pyramid?",
+        "What is the Lord Howe Island stick insect?"
+      ]
+    },
+    {
+      "answer": "Whittier",
+      "category": "Place",
+      "blurb": "An Alaskan town where most residents live in a single 14-storey building, reachable by road only through a one-lane tunnel shared with trains.",
+      "obvious": [
+        "What town lives in one building?",
+        "What Alaskan town is reached through a single tunnel?",
+        "What is Whittier, Alaska?"
+      ]
+    },
+    {
+      "answer": "Escamoles",
+      "category": "Food",
+      "blurb": "The edible larvae and pupae of Liometopum ants, harvested from agave roots in Mexico and nicknamed 'insect caviar'.",
+      "obvious": [
+        "What is insect caviar?",
+        "What ant larvae are eaten in Mexico?",
+        "What are escamoles?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Octobass",
+      "category": "Instrument",
+      "blurb": "A giant three-string bass about 3.5 m tall built by Jean-Baptiste Vuillaume around 1850, played with levers and pedals.",
+      "obvious": [
+        "What is the largest string instrument?",
+        "What double bass is too big to play by hand?",
+        "What is an octobass?"
+      ]
+    },
+    {
+      "answer": "Tuatara",
+      "category": "Animal",
+      "blurb": "A lizard-like New Zealand reptile, the last survivor of an order that thrived with the dinosaurs, with a light-sensing 'third eye' on its head.",
+      "obvious": [
+        "What reptile has a third eye?",
+        "What living fossil reptile lives in New Zealand?",
+        "What is a tuatara?"
+      ]
+    },
+    {
+      "answer": "Lake Natron",
+      "category": "Place",
+      "blurb": "A caustic, highly alkaline salt lake in Tanzania that can calcify dead animals, and the main breeding ground of lesser flamingos.",
+      "obvious": [
+        "What lake turns animals to stone?",
+        "Where do lesser flamingos breed in Tanzania?",
+        "What is Lake Natron?"
+      ]
+    },
+    {
+      "answer": "Malört",
+      "category": "Drink",
+      "blurb": "A notoriously bitter wormwood liqueur strongly associated with Chicago, where it is often handed to newcomers as a rite of passage.",
+      "obvious": [
+        "What is Chicago's most bitter liquor?",
+        "What wormwood spirit do Chicagoans dare visitors to drink?",
+        "What is Malört?"
+      ]
+    },
+    {
+      "answer": "Coade stone",
+      "category": "Material",
+      "blurb": "A durable ceramic artificial stone made by Eleanor Coade's London factory in the late 18th century, used for statues like the South Bank Lion.",
+      "obvious": [
+        "What artificial stone was used in Georgian architecture?",
+        "What material is the South Bank Lion made of?",
+        "What is Coade stone?"
+      ]
+    },
+    {
+      "answer": "William Buckland",
+      "category": "Person",
+      "blurb": "An English geologist and clergyman who named Megalosaurus, the first scientifically described dinosaur, and tried to eat his way through the animal kingdom.",
+      "obvious": [
+        "Who named the first dinosaur?",
+        "Which scientist tried to eat every animal?",
+        "Who was William Buckland?"
+      ]
+    },
+    {
+      "answer": "Pilcrow",
+      "category": "Word",
+      "blurb": "The name of the paragraph mark, a typographic character used by medieval scribes to mark new trains of thought.",
+      "obvious": [
+        "What is the paragraph symbol called?",
+        "What does the backwards P symbol mean?",
+        "What is a pilcrow?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Brunost",
+      "category": "Food",
+      "blurb": "Norwegian brown cheese made by boiling whey until its milk sugars caramelise, giving it a sweet, fudge-like flavour.",
+      "obvious": [
+        "What is Norway's brown cheese?",
+        "What cheese tastes like caramel?",
+        "What is brunost?"
+      ]
+    },
+    {
+      "answer": "Mokume-gane",
+      "category": "Material",
+      "blurb": "A Japanese metalworking technique that fuses layers of different metals into a wood-grain pattern, first used for samurai sword fittings.",
+      "obvious": [
+        "What Japanese metal looks like wood grain?",
+        "What technique layers metals for sword fittings?",
+        "What is mokume-gane?"
+      ]
+    },
+    {
+      "answer": "Elizabeth Magie",
+      "category": "Person",
+      "blurb": "An American game designer who patented The Landlord's Game in 1904 to teach economic ideas; it became the basis for Monopoly.",
+      "obvious": [
+        "Who really invented Monopoly?",
+        "Who created The Landlord's Game?",
+        "Who was Elizabeth Magie?"
+      ]
+    },
+    {
+      "answer": "Interrobang",
+      "category": "Word",
+      "blurb": "A punctuation mark combining a question mark and an exclamation mark, invented in 1962 by advertising executive Martin K. Speckter.",
+      "obvious": [
+        "What punctuation mark combines ? and !?",
+        "What is the question-exclamation mark called?",
+        "What is an interrobang?"
+      ]
+    },
+    {
+      "answer": "Great Stalacpipe Organ",
+      "category": "Instrument",
+      "blurb": "An instrument in Luray Caverns, Virginia, that plays music by striking ancient stalactites with rubber-tipped mallets.",
+      "obvious": [
+        "What is the largest instrument in the world?",
+        "What organ is played on stalactites?",
+        "What is the Great Stalacpipe Organ?"
+      ]
+    },
+    {
+      "answer": "Gympie-gympie",
+      "category": "Plant",
+      "blurb": "An Australian stinging tree covered in silica hairs whose sting is so painful it can recur for weeks or months.",
+      "obvious": [
+        "What is the most painful stinging plant?",
+        "What Australian tree has a sting that lasts months?",
+        "What is the gympie-gympie?"
+      ]
+    },
+    {
+      "answer": "Son Doong",
+      "category": "Place",
+      "blurb": "A cave in Vietnam's Phong Nha-Ke Bang park with the largest known cave passage, big enough to hold its own jungle and clouds.",
+      "obvious": [
+        "What is the largest cave in the world?",
+        "What Vietnamese cave has its own jungle inside?",
+        "What is Son Doong cave?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Borborygmus",
+      "category": "Word",
+      "blurb": "The medical term for the rumbling or gurgling noise of gas moving through the intestines.",
+      "obvious": [
+        "What is the word for a stomach rumbling?",
+        "What is the medical name for tummy noises?",
+        "What is borborygmus?"
+      ]
+    },
+    {
+      "answer": "Uffington White Horse",
+      "category": "Artwork",
+      "blurb": "A stylised prehistoric figure of a horse over 100 m long, cut into a chalk hillside in Oxfordshire more than 3,000 years ago.",
+      "obvious": [
+        "What is the oldest chalk figure in England?",
+        "What ancient horse is carved into an Oxfordshire hill?",
+        "What is the Uffington White Horse?"
+      ]
+    },
+    {
+      "answer": "Barreleye",
+      "category": "Animal",
+      "blurb": "A deep-sea fish with a transparent, fluid-filled head through which its upward-pointing tubular green eyes can rotate.",
+      "obvious": [
+        "What fish has a see-through head?",
+        "What deep-sea fish has tubular eyes inside its head?",
+        "What is a barreleye fish?"
+      ]
+    },
+    {
+      "answer": "Ilha da Queimada Grande",
+      "category": "Place",
+      "blurb": "Snake Island off Brazil's São Paulo coast, home to the critically endangered golden lancehead viper; public visits are banned.",
+      "obvious": [
+        "What island is overrun with venomous snakes?",
+        "Where does the golden lancehead viper live?",
+        "What is Ilha da Queimada Grande?"
+      ]
+    },
+    {
+      "answer": "Pruno",
+      "category": "Drink",
+      "blurb": "Prison wine improvised from fruit, sugar and other scraps fermented in a plastic bag, usually hidden from guards.",
+      "obvious": [
+        "What is prison wine called?",
+        "What alcohol do inmates make in plastic bags?",
+        "What is pruno?"
+      ]
+    },
+    {
+      "answer": "Galalith",
+      "category": "Material",
+      "blurb": "An early plastic made from milk protein (casein) hardened with formaldehyde, popular around 1900-1930 for buttons and jewellery.",
+      "obvious": [
+        "What plastic is made from milk?",
+        "What early plastic was used for Art Deco jewellery?",
+        "What is Galalith?"
+      ]
+    },
+    {
+      "answer": "Vesna Vulović",
+      "category": "Person",
+      "blurb": "A Yugoslav flight attendant who survived a fall of about 10,000 m in 1972 when her plane broke up in the air, a Guinness world record.",
+      "obvious": [
+        "Who survived the highest fall without a parachute?",
+        "Which flight attendant survived a plane breaking apart?",
+        "Who was Vesna Vulović?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Kowloon Walled City",
+      "category": "Place",
+      "blurb": "An ungoverned, extremely dense enclave in Hong Kong where tens of thousands lived in a few hectares; it was demolished in 1993-94.",
+      "obvious": [
+        "What was the most densely populated place on Earth?",
+        "What lawless enclave in Hong Kong was demolished in 1994?",
+        "What was Kowloon Walled City?"
+      ]
+    },
+    {
+      "answer": "Tsampa",
+      "category": "Food",
+      "blurb": "Roasted barley flour, a Tibetan staple usually mixed with salty butter tea and kneaded by hand into a dough.",
+      "obvious": [
+        "What is the staple food of Tibet?",
+        "What roasted barley flour is eaten with butter tea?",
+        "What is tsampa?"
+      ]
+    },
+    {
+      "answer": "Tyrian purple",
+      "category": "Material",
+      "blurb": "A costly dye extracted from murex sea snails by the Phoenicians of Tyre, so expensive it became reserved for royalty and emperors.",
+      "obvious": [
+        "What purple dye came from sea snails?",
+        "What dye was worn by Roman emperors?",
+        "What is Tyrian purple?"
+      ]
+    },
+    {
+      "answer": "Frank Hayes",
+      "category": "Person",
+      "blurb": "A jockey who suffered a fatal heart attack mid-race at Belmont Park in 1923, yet stayed in the saddle as his horse Sweet Kiss won.",
+      "obvious": [
+        "Which jockey won a race after he died?",
+        "Who is the only dead person to win a horse race?",
+        "Who was Frank Hayes?"
+      ]
+    },
+    {
+      "answer": "Lethologica",
+      "category": "Word",
+      "blurb": "The temporary inability to recall the right word, the feeling of a word being on the tip of your tongue.",
+      "obvious": [
+        "What is the word for forgetting a word?",
+        "What is tip-of-the-tongue syndrome called?",
+        "What is lethologica?"
+      ]
+    },
+    {
+      "answer": "Codex Seraphinianus",
+      "category": "Artwork",
+      "blurb": "An illustrated encyclopedia of an imaginary world written in an invented, unreadable script, created by Italian artist Luigi Serafini in 1981.",
+      "obvious": [
+        "What book is written in a made-up alphabet about an imaginary world?",
+        "What is Luigi Serafini's famous book?",
+        "What is the Codex Seraphinianus?"
+      ]
+    },
+    {
+      "answer": "Star-nosed mole",
+      "category": "Animal",
+      "blurb": "A North American mole with 22 pink fleshy tentacles on its snout, among the most sensitive touch organs known; it eats faster than any mammal.",
+      "obvious": [
+        "What mole has tentacles on its nose?",
+        "What mammal is the fastest eater?",
+        "What is a star-nosed mole?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Kaspar Hauser",
+      "category": "Person",
+      "blurb": "A mysterious German youth who appeared in Nuremberg in 1828 claiming he had been raised alone in a dark cell; his origins remain debated.",
+      "obvious": [
+        "Who was the wild boy of Nuremberg?",
+        "What foundling claimed he grew up in a dark dungeon?",
+        "Who was Kaspar Hauser?"
+      ]
+    },
+    {
+      "answer": "Jentacular",
+      "category": "Word",
+      "blurb": "An adjective meaning relating to breakfast, from the Latin jentaculum, a breakfast taken right after waking.",
+      "obvious": [
+        "What is the adjective for breakfast?",
+        "What fancy word describes things to do with breakfast?",
+        "What does jentacular mean?"
+      ]
+    },
+    {
+      "answer": "Sepak takraw",
+      "category": "Sport",
+      "blurb": "A Southeast Asian sport like volleyball played over a net with a rattan ball, using only the feet, knees, chest and head.",
+      "obvious": [
+        "What sport is volleyball with your feet?",
+        "What is kick volleyball called in Thailand?",
+        "What is sepak takraw?"
+      ]
+    },
+    {
+      "answer": "Pando",
+      "category": "Plant",
+      "blurb": "A clonal colony of quaking aspen in Utah: tens of thousands of trunks sharing one root system, counted among the heaviest organisms on Earth.",
+      "obvious": [
+        "What is the heaviest living organism?",
+        "What aspen grove in Utah is a single organism?",
+        "What is Pando?"
+      ]
+    },
+    {
+      "answer": "Zealandia",
+      "category": "Place",
+      "blurb": "A mostly submerged continent in the southwest Pacific, about 94% underwater, whose highest parts are New Zealand and New Caledonia.",
+      "obvious": [
+        "What is the hidden eighth continent?",
+        "What sunken continent lies under New Zealand?",
+        "What is Zealandia?"
+      ]
+    },
+    {
+      "answer": "Syllabub",
+      "category": "Food",
+      "blurb": "An old English dessert of cream whipped with sweet wine or sherry and sugar, popular from the 16th to 19th centuries.",
+      "obvious": [
+        "What Tudor dessert is cream whipped with wine?",
+        "What frothy dessert was popular in Georgian England?",
+        "What is syllabub?"
+      ]
+    },
+    {
+      "answer": "Chappe telegraph",
+      "category": "Invention",
+      "blurb": "A network of hilltop towers with movable wooden arms built by Claude Chappe in 1790s France to relay coded messages by sight.",
+      "obvious": [
+        "What was the first optical telegraph network?",
+        "What semaphore system did revolutionary France build?",
+        "What is the Chappe telegraph?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Hydnora africana",
+      "category": "Plant",
+      "blurb": "A leafless parasitic plant of southern Africa that lives underground on Euphorbia roots and pushes up a fleshy flower smelling of dung to lure beetles.",
+      "obvious": [
+        "What plant grows underground and smells like dung?",
+        "What parasitic plant traps beetles in South Africa?",
+        "What is Hydnora africana?"
+      ]
+    },
+    {
+      "answer": "Cahokia",
+      "category": "Place",
+      "blurb": "A large pre-Columbian Mississippian city near modern St Louis, peaking around 1050-1350 CE, home of the giant earthwork Monks Mound.",
+      "obvious": [
+        "What was the largest Native American city north of Mexico?",
+        "Where is Monks Mound?",
+        "What is Cahokia?"
+      ]
+    },
+    {
+      "answer": "Laverbread",
+      "category": "Food",
+      "blurb": "A Welsh purée of laver seaweed boiled for hours, traditionally fried with cockles and bacon for breakfast.",
+      "obvious": [
+        "What seaweed dish is eaten in Wales?",
+        "What is Welsh caviar?",
+        "What is laverbread?"
+      ]
+    },
+    {
+      "answer": "Damascus steel",
+      "category": "Material",
+      "blurb": "A legendary steel of medieval Middle Eastern blades made from Indian wootz, with flowing water-like patterns; the original method was lost.",
+      "obvious": [
+        "What steel has a wavy water pattern?",
+        "What steel were legendary Crusade-era swords made of?",
+        "What is Damascus steel?"
+      ]
+    },
+    {
+      "answer": "Mary Anning",
+      "category": "Person",
+      "blurb": "A self-taught fossil collector from Lyme Regis who found the first correctly identified ichthyosaur and the first complete plesiosaur in the early 1800s.",
+      "obvious": [
+        "Who found the first plesiosaur?",
+        "Who inspired the tongue twister 'she sells seashells'?",
+        "Who was Mary Anning?"
+      ]
+    },
+    {
+      "answer": "Volapük",
+      "category": "Language",
+      "blurb": "A constructed language created around 1880 by German priest Johann Martin Schleyer, briefly popular before Esperanto overtook it.",
+      "obvious": [
+        "What constructed language came before Esperanto?",
+        "What language did Johann Martin Schleyer invent?",
+        "What is Volapük?"
+      ]
+    },
+    {
+      "answer": "Chess boxing",
+      "category": "Sport",
+      "blurb": "A hybrid sport alternating rounds of chess and boxing, won by checkmate or knockout; first organised as an event in 2003.",
+      "obvious": [
+        "What sport combines chess and boxing?",
+        "What sport can be won by checkmate or knockout?",
+        "What is chess boxing?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Vantablack",
+      "category": "Material",
+      "blurb": "A coating of vertically aligned carbon nanotubes that absorbs up to 99.965% of visible light, making objects look like holes.",
+      "obvious": [
+        "What is the blackest material?",
+        "What black did Anish Kapoor buy exclusive rights to?",
+        "What is Vantablack?"
+      ]
+    },
+    {
+      "answer": "Tycho Brahe",
+      "category": "Person",
+      "blurb": "A Danish astronomer whose precise naked-eye observations aided Kepler; he wore a metal nose after losing part of his own in a duel.",
+      "obvious": [
+        "Which astronomer had a metal nose?",
+        "Who built the Uraniborg observatory?",
+        "Who was Tycho Brahe?"
+      ]
+    },
+    {
+      "answer": "Solresol",
+      "category": "Language",
+      "blurb": "A 19th-century constructed language by François Sudre built entirely from the seven musical notes, so it could be sung, played or spoken.",
+      "obvious": [
+        "What language is made of musical notes?",
+        "What language can be played on an instrument?",
+        "What is Solresol?"
+      ]
+    },
+    {
+      "answer": "Shin-kicking",
+      "category": "Sport",
+      "blurb": "A contest at the Cotswold Olimpicks in Chipping Campden, England, dating to the 17th century, in which players kick each other's straw-padded shins.",
+      "obvious": [
+        "What sport involves kicking each other's shins?",
+        "What event is a highlight of the Cotswold Olimpicks?",
+        "What is shin-kicking?"
+      ]
+    },
+    {
+      "answer": "Superb lyrebird",
+      "category": "Animal",
+      "blurb": "An Australian songbird with a lyre-shaped tail that can mimic almost any sound, including other birds, camera shutters and chainsaws.",
+      "obvious": [
+        "What bird can imitate a chainsaw?",
+        "What Australian bird is the best mimic?",
+        "What is a lyrebird?"
+      ]
+    },
+    {
+      "answer": "Chand Baori",
+      "category": "Place",
+      "blurb": "A 9th-century stepwell in Abhaneri, Rajasthan, with about 3,500 narrow steps descending 13 levels in a dizzying geometric pattern.",
+      "obvious": [
+        "What is the deepest stepwell in India?",
+        "What Rajasthan stepwell has thousands of steps?",
+        "What is Chand Baori?"
+      ]
+    },
+    {
+      "answer": "Muktuk",
+      "category": "Food",
+      "blurb": "A traditional Inuit food of whale skin with the attached blubber, often eaten raw or frozen and a key source of vitamin C.",
+      "obvious": [
+        "What Inuit food is whale skin and blubber?",
+        "Where do Inuit get vitamin C?",
+        "What is muktuk?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Calcio storico",
+      "category": "Sport",
+      "blurb": "A brutal historic form of football played in Florence's Piazza Santa Croce each June, mixing soccer, rugby and wrestling.",
+      "obvious": [
+        "What is the most violent form of football?",
+        "What old football game is played in Florence?",
+        "What is calcio storico?"
+      ]
+    },
+    {
+      "answer": "Coelacanth",
+      "category": "Animal",
+      "blurb": "A lobe-finned fish thought extinct for 66 million years until one was caught off South Africa in 1938 and spotted by Marjorie Courtenay-Latimer.",
+      "obvious": [
+        "What fish was thought extinct since the dinosaurs?",
+        "What living fossil fish was found in 1938?",
+        "What is a coelacanth?"
+      ]
+    },
+    {
+      "answer": "Nan Madol",
+      "category": "Place",
+      "blurb": "A ruined city of stacked basalt columns built on artificial islets off Pohnpei, Micronesia, seat of the Saudeleur dynasty.",
+      "obvious": [
+        "What ancient city was built on artificial islands in Micronesia?",
+        "What ruins on Pohnpei are made of basalt logs?",
+        "What is Nan Madol?"
+      ]
+    },
+    {
+      "answer": "Tepache",
+      "category": "Drink",
+      "blurb": "A lightly fermented Mexican drink made from pineapple peels and rind with piloncillo sugar and cinnamon.",
+      "obvious": [
+        "What drink is made from pineapple peels?",
+        "What fermented pineapple drink comes from Mexico?",
+        "What is tepache?"
+      ]
+    },
+    {
+      "answer": "Wardian case",
+      "category": "Invention",
+      "blurb": "A sealed glass plant case invented by Nathaniel Bagshaw Ward around 1829 that let living plants survive long sea voyages, such as tea moved to India.",
+      "obvious": [
+        "What glass case let plants travel by sea?",
+        "What Victorian invention was the first terrarium?",
+        "What is a Wardian case?"
+      ]
+    },
+    {
+      "answer": "Eadweard Muybridge",
+      "category": "Person",
+      "blurb": "An English photographer who in 1878 used a row of cameras to prove a galloping horse lifts all four hooves off the ground.",
+      "obvious": [
+        "Who photographed a horse in motion?",
+        "Who proved horses fly while galloping?",
+        "Who was Eadweard Muybridge?"
+      ]
+    },
+    {
+      "answer": "Shibboleth",
+      "category": "Word",
+      "blurb": "A word or custom that marks someone as an insider or outsider, from the Bible story where Ephraimites betrayed themselves by mispronouncing it.",
+      "obvious": [
+        "What word means a password that reveals your group?",
+        "What word did Ephraimites fail to pronounce?",
+        "What is a shibboleth?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Shiokara",
+      "category": "Food",
+      "blurb": "A Japanese dish of salted, fermented seafood, most often squid pieces fermented in their own salty liver paste.",
+      "obvious": [
+        "What fermented squid dish is eaten in Japan?",
+        "What salty Japanese snack goes with sake?",
+        "What is shiokara?"
+      ]
+    },
+    {
+      "answer": "Claude glass",
+      "category": "Object",
+      "blurb": "A small, tinted convex mirror that 18th-century tourists and artists turned their backs to the scenery to view landscapes in, named after painter Claude Lorrain.",
+      "obvious": [
+        "What mirror did 18th-century tourists use to look at landscapes?",
+        "What tinted mirror was used by picturesque artists?",
+        "What is a Claude glass?"
+      ]
+    },
+    {
+      "answer": "Bass Reeves",
+      "category": "Person",
+      "blurb": "A formerly enslaved man who became one of the first Black deputy US marshals west of the Mississippi, serving for decades in Indian Territory.",
+      "obvious": [
+        "Who was the first Black deputy US marshal west of the Mississippi?",
+        "Which lawman might have inspired the Lone Ranger?",
+        "Who was Bass Reeves?"
+      ]
+    },
+    {
+      "answer": "Kenning",
+      "category": "Word",
+      "blurb": "A compound metaphor used in Old Norse and Old English poetry, such as 'whale-road' for the sea.",
+      "obvious": [
+        "What is a poetic compound like whale-road?",
+        "What Norse figure of speech replaces a noun with a metaphor?",
+        "What is a kenning?"
+      ]
+    },
+    {
+      "answer": "Jai alai",
+      "category": "Sport",
+      "blurb": "A Basque-origin court sport in which players hurl a hard ball off walls using curved wicker baskets called cestas, at extreme speeds.",
+      "obvious": [
+        "What sport has the fastest ball?",
+        "What sport uses a cesta basket?",
+        "What is jai alai?"
+      ]
+    },
+    {
+      "answer": "Fossa",
+      "category": "Animal",
+      "blurb": "Madagascar's largest native carnivore, a cat-like predator related to mongooses that hunts lemurs in the trees.",
+      "obvious": [
+        "What is the largest predator in Madagascar?",
+        "What cat-like animal eats lemurs?",
+        "What is a fossa?"
+      ]
+    },
+    {
+      "answer": "Fly Geyser",
+      "category": "Place",
+      "blurb": "A multicoloured, terraced geyser in Nevada's desert created accidentally by geothermal well drilling in the 20th century.",
+      "obvious": [
+        "What geyser was created by accident in Nevada?",
+        "What colourful man-made geyser is near the Black Rock Desert?",
+        "What is Fly Geyser?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Gongoozler",
+      "category": "Word",
+      "blurb": "A British word for an idle person who enjoys watching boats and activity on canals.",
+      "obvious": [
+        "What do you call someone who watches canal boats?",
+        "What is the word for a canal spectator?",
+        "What is a gongoozler?"
+      ]
+    },
+    {
+      "answer": "Vexations",
+      "category": "Music",
+      "blurb": "An 1893-era piano piece by Erik Satie with a note suggesting it be played 840 times; John Cage staged the first full performance in 1963.",
+      "obvious": [
+        "What piece of music should be played 840 times?",
+        "What Satie piece takes 18 hours to perform?",
+        "What is Vexations?"
+      ]
+    },
+    {
+      "answer": "Gharial",
+      "category": "Animal",
+      "blurb": "A critically endangered crocodilian of Indian and Nepalese rivers with a very long, thin snout; adult males grow a bulbous knob on the tip.",
+      "obvious": [
+        "What crocodile has a very thin snout?",
+        "What crocodilian lives in the Ganges?",
+        "What is a gharial?"
+      ]
+    },
+    {
+      "answer": "Racetrack Playa",
+      "category": "Place",
+      "blurb": "A dry lakebed in Death Valley where rocks leave long trails as thin ice sheets pushed by wind slide them, a mystery solved in 2014.",
+      "obvious": [
+        "Where do the sailing stones move by themselves?",
+        "What dry lakebed in Death Valley has moving rocks?",
+        "What is Racetrack Playa?"
+      ]
+    },
+    {
+      "answer": "Chicha",
+      "category": "Drink",
+      "blurb": "A fermented maize drink of the Andes, traditionally made by chewing corn so saliva enzymes break starch into fermentable sugar.",
+      "obvious": [
+        "What corn beer is made by chewing?",
+        "What is the ancient beer of the Incas?",
+        "What is chicha?"
+      ]
+    },
+    {
+      "answer": "Orichalcum",
+      "category": "Material",
+      "blurb": "A metal that Plato said was mined in Atlantis; in 2015 ingots of a brass-like alloy identified as orichalcum were found in a shipwreck off Sicily.",
+      "obvious": [
+        "What metal did Plato say came from Atlantis?",
+        "What legendary metal was found off Sicily in 2015?",
+        "What is orichalcum?"
+      ]
+    },
+    {
+      "answer": "Phineas Gage",
+      "category": "Person",
+      "blurb": "A railroad foreman who in 1848 survived an iron tamping rod passing through his skull, becoming a landmark case in brain science.",
+      "obvious": [
+        "Who survived an iron rod through his head?",
+        "Which patient taught us about the frontal lobe?",
+        "Who was Phineas Gage?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Lake Vostok",
+      "category": "Place",
+      "blurb": "The largest known subglacial lake, sealed under about 4 km of Antarctic ice beneath Russia's Vostok Station.",
+      "obvious": [
+        "What lake lies under the Antarctic ice sheet?",
+        "What is the largest lake beneath Antarctica?",
+        "What is Lake Vostok?"
+      ]
+    },
+    {
+      "answer": "Kvass",
+      "category": "Drink",
+      "blurb": "A traditional Slavic fermented drink made from rye bread, very low in alcohol and sold from street tanks in summer.",
+      "obvious": [
+        "What drink is made from fermented bread?",
+        "What is the traditional Russian soft drink?",
+        "What is kvass?"
+      ]
+    },
+    {
+      "answer": "Ishango bone",
+      "category": "Object",
+      "blurb": "A notched baboon bone about 20,000 years old found in what is now the Democratic Republic of Congo, possibly an early tally or calculation tool.",
+      "obvious": [
+        "What is the oldest mathematical tool?",
+        "What ancient bone from Africa has tally marks?",
+        "What is the Ishango bone?"
+      ]
+    },
+    {
+      "answer": "John Harrison",
+      "category": "Person",
+      "blurb": "A self-taught English carpenter and clockmaker whose marine chronometers, especially the H4, solved the problem of finding longitude at sea.",
+      "obvious": [
+        "Who solved the longitude problem?",
+        "Who invented the marine chronometer?",
+        "Who was John Harrison?"
+      ]
+    },
+    {
+      "answer": "Paraprosdokian",
+      "category": "Word",
+      "blurb": "A figure of speech whose ending is surprising and makes you reinterpret the first part, as in many one-liner jokes.",
+      "obvious": [
+        "What is a sentence with an unexpected ending called?",
+        "What figure of speech is a surprise twist joke?",
+        "What is a paraprosdokian?"
+      ]
+    },
+    {
+      "answer": "As Slow As Possible",
+      "category": "Music",
+      "blurb": "A John Cage organ piece now being performed at St Burchardi church in Halberstadt, Germany, which started in 2001 and is scheduled to end in 2640.",
+      "obvious": [
+        "What is the longest musical performance ever?",
+        "What organ piece will finish in 2640?",
+        "What is As Slow As Possible?"
+      ]
+    },
+    {
+      "answer": "Desert rain frog",
+      "category": "Animal",
+      "blurb": "A small, round burrowing frog of the coastal dunes of Namibia and South Africa, known for its squeaky defensive call.",
+      "obvious": [
+        "What frog makes a squeaky battle cry?",
+        "What frog lives in sand dunes in Namibia?",
+        "What is a desert rain frog?"
+      ]
+    }
+  ],
+  [
+    {
+      "answer": "Ignaz Semmelweis",
+      "category": "Person",
+      "blurb": "A Hungarian doctor who in 1847 showed that handwashing with chlorinated lime slashed childbed-fever deaths in Vienna, but was ridiculed.",
+      "obvious": [
+        "Who discovered the importance of handwashing?",
+        "Which doctor was mocked for telling doctors to wash their hands?",
+        "Who was Ignaz Semmelweis?"
+      ]
+    },
+    {
+      "answer": "Octothorpe",
+      "category": "Word",
+      "blurb": "A name for the # symbol, coined at Bell Labs in the 1960s for the telephone keypad.",
+      "obvious": [
+        "What is the proper name for the hash symbol?",
+        "What did Bell Labs call the pound key?",
+        "What is an octothorpe?"
+      ]
+    },
+    {
+      "answer": "Theremin",
+      "category": "Instrument",
+      "blurb": "An electronic instrument played without being touched, the hands moving near two antennas; invented by Léon Theremin in the 1920s.",
+      "obvious": [
+        "What instrument do you play without touching it?",
+        "What makes the spooky sound in old sci-fi films?",
+        "What is a theremin?"
+      ]
+    },
+    {
+      "answer": "Bombardier beetle",
+      "category": "Animal",
+      "blurb": "A beetle that defends itself by mixing chemicals in its abdomen to shoot a hot, boiling spray at attackers with an audible pop.",
+      "obvious": [
+        "What insect sprays boiling chemicals?",
+        "What beetle has a chemical explosion defence?",
+        "What is a bombardier beetle?"
+      ]
+    },
+    {
+      "answer": "Svalbard Global Seed Vault",
+      "category": "Place",
+      "blurb": "A backup store of crop seeds from around the world dug into a permafrost mountain on Norway's Spitsbergen island, opened in 2008.",
+      "obvious": [
+        "What is the doomsday vault?",
+        "Where are the world's backup crop seeds stored?",
+        "What is the Svalbard Global Seed Vault?"
+      ]
+    },
+    {
+      "answer": "Dulse",
+      "category": "Food",
+      "blurb": "A red seaweed (Palmaria palmata) harvested on North Atlantic shores and eaten dried as a salty snack in Ireland and Atlantic Canada.",
+      "obvious": [
+        "What red seaweed is eaten as a snack?",
+        "What seaweed is sold dried in Nova Scotia?",
+        "What is dulse?"
+      ]
+    },
+    {
+      "answer": "Pykrete",
+      "category": "Material",
+      "blurb": "A frozen mix of sawdust and ice, tougher than plain ice, proposed in WWII for an aircraft-carrier iceberg (Project Habakkuk).",
+      "obvious": [
+        "What material is made of frozen wood pulp and water?",
+        "What ice composite was Project Habakkuk going to use?",
+        "What is pykrete?"
+      ]
+    }
+  ]
+]

@@ -1,0 +1,19 @@
+// Cloudflare Worker for KrONE (https://developers.cloudflare.com/workers/wrangler/configuration/)
+// worker/index.mjs serves public/ and runs /api/* with one Durable Object per puzzle day.
+// Questions are judged by Workers AI (binding AI); no API keys or secrets needed.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "krone",
+  "main": "worker/index.mjs",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": ["/api/*"] },
+  "ai": { "binding": "AI" },
+  "durable_objects": { "bindings": [{ "name": "DAY", "class_name": "Day" }] },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["Day"] }],
+  "vars": {
+    "JUDGE_MODEL": "@cf/meta/llama-3.3-70b-instruct-fp8-fast",
+    "EMBED_MODEL": "@cf/baai/bge-base-en-v1.5"
+  },
+  "routes": [{ "pattern": "krone.freemanmiller.net", "custom_domain": true }],
+  "observability": { "enabled": true }
+}
