@@ -227,27 +227,28 @@ export class Day extends DurableObject {
   }
 
   async askJudge(item, q, ai) {
-    const env = this.env;
     if (!ai) return { valid: true, obscurity: 35, comment: 'The judge is resting today. Scored on rarity alone.' };
-    const system = `You are the judge of KrONE, a game where the player is given a rare ANSWER and must write a QUESTION whose answer is it, and the more unusual the question, the better.
-Decide:
-- valid: true if someone who knows the facts would read QUESTION and arrive at ANSWER as a correct answer (other answers can also be possible, but ANSWER must clearly fit), the facts in QUESTION are accurate, and it is a sincere question. false if it is factually wrong, too vague to point at ANSWER (e.g. "What is a thing?"), unrelated, a joke that doesn't work, or offensive/hateful/sexual.
-- obscurity: 0-100, how rare and unexpected the angle is. 0-15 = the textbook definition anyone would write. 30-50 = a fair but natural angle. 60-80 = a specific, surprising true detail. 85-100 = a brilliant, unexpected, specific connection almost nobody would think to ask. Vagueness does not count as obscurity.
-- comment: one short, witty line (max 14 words) for the player about their question. If invalid, say briefly why.
-Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}`;
+    const first = await this.judgeOnce(JUDGE, item, q, ai);
+    if (!first) return { valid: true, obscurity: 35, comment: 'The judge blinked. Scored on rarity alone.' };
+    if (first.valid) return { ...first, judged: true };
+    // A rejection gets a second, generous look, so a real reference the first pass didn't recognise isn't thrown out.
+    const appeal = await this.judgeOnce(APPEAL, item, q, ai);
+    return appeal?.valid ? { ...appeal, judged: true, appealed: true } : { ...first, judged: true };
+  }
+
+  async judgeOnce(system, item, q, ai) {
     const user = `ANSWER: ${item.answer}\nABOUT IT: ${item.blurb}\nQUESTION: ${q}`;
     try {
-      const out = await ai.run(env.JUDGE_MODEL, {
+      const out = await ai.run(this.env.JUDGE_MODEL, {
         messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
-        max_tokens: 120, temperature: 0.2,
-        response_format: { type: 'json_schema', json_schema: { type: 'object', properties: { valid: { type: 'boolean' }, obscurity: { type: 'number' }, comment: { type: 'string' } }, required: ['valid', 'obscurity', 'comment'] } },
+        max_tokens: 160, temperature: 0.2,
+        response_format: { type: 'json_schema', json_schema: VERDICT_SCHEMA },
       });
-      const v = parseVerdict(out?.response);
-      if (v) return { ...v, judged: true };
+      return parseVerdict(out?.response);
     } catch (e) {
       console.error('judge', e);
+      return null;
     }
-    return { valid: true, obscurity: 35, comment: 'The judge blinked. Scored on rarity alone.' };
   }
 
   async embed(item, i, q, ai) {
@@ -279,13 +280,36 @@ Reply with JSON only: {"valid": boolean, "obscurity": number, "comment": string}
   }
 }
 
+// ---- the judge's instructions ---------------------------------------------------
+
+const RUBRIC = `- obscurity: 0-100, how rare and unexpected the angle is. 0-15 = the textbook definition anyone would write. 30-50 = a fair but natural angle. 60-80 = a specific, surprising detail. 85-100 = a brilliant, unexpected, specific connection almost nobody would think to ask. Vagueness does not count as obscurity.
+- comment: one short, witty line (max 14 words) for the player about their question. If invalid, say briefly why.
+Reply with JSON only: {"refers_to": string, "valid": boolean, "obscurity": number, "comment": string}`;
+
+const JUDGE = `You are the judge of KrONE, a game where the player is given an ANSWER and must write a QUESTION that leads to it; the more unusual the question, the better.
+First, in "refers_to" (max 15 words), say what the question is pointing at. Think broadly: facts, history and science, but also pop culture (cartoons, TV, films, books, games, songs, brands, mascots, memes), nicknames, idioms and wordplay. For example, "What is the famous secret agent named Perry?" points to Perry the Platypus from Phineas and Ferb, so it leads to Platypus.
+Then decide:
+- valid: true if a reasonable person who gets the reference would say ANSWER is a correct answer to QUESTION. Be generous: other answers may also fit, and loose or slightly inaccurate wording is fine when the reference is still recognisable (e.g. calling a secret agent a detective). false only if it clearly doesn't lead to ANSWER, it's too vague to point anywhere (e.g. "What is a thing?"), it's clearly false in a way that changes the answer, or it's offensive, hateful or sexual.
+${RUBRIC}`;
+
+const APPEAL = `You are the appeals judge of KrONE, a game where the player is given an ANSWER and must write a QUESTION that leads to it. The first judge rejected this question; your job is to catch references it missed.
+In "refers_to" (max 15 words), name the most likely thing the player had in mind. Search widely: cartoons and their characters, TV, films, books, games, songs, brands, mascots, memes, sports, nicknames, idioms, puns, regional names and lesser-known facts.
+- valid: true if there is a recognisable reading under which ANSWER is a fair answer, even with loose or slightly wrong wording. false if, after looking hard, the question genuinely doesn't lead to ANSWER, or it is offensive, hateful or sexual.
+${RUBRIC}`;
+
+const VERDICT_SCHEMA = {
+  type: 'object',
+  properties: { refers_to: { type: 'string' }, valid: { type: 'boolean' }, obscurity: { type: 'number' }, comment: { type: 'string' } },
+  required: ['refers_to', 'valid', 'obscurity', 'comment'],
+};
+
 // ---- the AI budget ------------------------------------------------------------
 // Workers AI includes 10,000 free neurons a day (reset at 00:00 UTC) and Cloudflare has no spending cap, so the game
 // keeps its own count in one Durable Object and stops calling AI before the free allowance runs out. Until the reset,
 // questions are scored without the judge or embeddings (the same fallback as when AI is unavailable).
 
 const AI_DAILY_LIMIT = 9000;   // neurons a day (AI_DAILY_NEURONS overrides); stays under the free 10,000 with room for error
-const RESERVE = 40;            // set aside before each question (one usually costs ~20), then settled to the real use
+const RESERVE = 70;            // set aside before each question (one usually costs ~25, ~50 with an appeal), then settled to the real use
 
 // neurons per million tokens (https://developers.cloudflare.com/workers-ai/platform/pricing/); a model not listed
 // here is counted at a deliberately high guess, so switching JUDGE_MODEL can only make the cap stricter
